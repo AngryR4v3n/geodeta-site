@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles//body.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__aside">
+                        <a class="logo">
+                            <img src="/public/manul.webp" width="214" height="30">
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <nav class="nav">
+                            <ul>
+                                <%navBarOptions.forEach(element=> { %>
+                                    <%if (element.hasDropdown==true) { %>
+                                        <li>
+                                            <ul>
+                                                <%element.sublink.forEach(subElement=> { %>
+                                                    <li>
+                                                        <a href="<%=subElement.link%>">
+                                                            <%=subElement.title%>
+                                                        </a>
+                                                    </li>
+                                                    <%});%>
+                                            </ul>
+                                            <a href="<%=element.link%>">
+                                                <%=element.title%>
+                                            </a>
+                                        </li>
+                                        <% } else { %>
+                                            <li>
+                                                <a href="<%=element.link%>">
+                                                    <%=element.title%>
+                                                </a>
+                                            </li>
+                                            <%}%>
+                                                <%});%>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>

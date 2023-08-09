@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "geodeta-site",
+  "description": "Landing &amp; contact me website for Anna Dakowicz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngryR4v3n/geodeta-site.git"
+  },
+  "keywords": [
+    "www",
+    "html",
+    "express"
+  ],
+  "author": "Francisco Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngryR4v3n/geodeta-site/issues"
+  },
+  "homepage": "https://github.com/AngryR4v3n/geodeta-site#readme",
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
