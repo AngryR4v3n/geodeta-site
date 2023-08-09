@@ -3,4 +3,10 @@ body{
     font-size: 16px;
     line-height: 1.3;
     color: #384062;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    transition: opacity 0.4s ease-in-out;
 }
