@@ -1,12 +1,92 @@
+@font-face {
+    font-family: "Lato";
+    src: url("/public/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(/public/fonts/Lato-Black.ttf);
+}
+
 body{
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 1.3;
     color: #384062;
     text-align: left;
 }
+* {
+    font-family: "Lato";
+}
 
-a{
+a {
     text-decoration: none;
     transition: opacity 0.4s ease-in-out;
+}
+
+li a {
+    text-decoration:  none !important;
+}
+
+h6 {
+    font-size: 18px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important ;
+}
+ul li {
+    list-style: none outside none;
+}
+
+.button {
+    display: inline-block !important;
+    padding: 19px 10px;
+    min-width: 153px;
+    background: transparent;
+    border: 1px solid #384062;
+    border-top-color: rgb(56, 64, 98);
+    border-right-color: rgb(56, 64, 98);
+    border-bottom-color: rgb(56, 64, 98);
+    border-left-color: rgb(56, 64, 98);
+    border-radius: 4.8px;
+    color: #384062;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.button--solid-yellow {
+    background: #FED700 !important;
+    border-color: #FED700 !important;
+}
+
+.button--solid-yellow__hover-blue:hover {
+    background: transparent !important;
+    color: #121A3E;
+    border-color: #121A3E !important;
+}
+
+.button--solid-dark-blue:hover {
+    background: transparent;
+    color: #151E46;
+}
+
+.button--solid-dark-blue {
+    background: #151E46;
+    border-color: #151E46;
+    color: #fff;
+}
+
+.button--solid-dark-blue:hover {
+    background: transparent;
+    color: #151E46;
 }

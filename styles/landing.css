@@ -1,0 +1,116 @@
+.intro--landing{
+    color: #121A3E;
+    text-align: left;
+    padding-top: 34px;
+    padding-bottom: 40px;
+    margin-bottom: 2em;
+}
+
+.intro--landing--container {
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+/* This is for main title */
+.intro--landing--left h1 {
+    color: #121A3E;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.intro--landing--left__underline {
+    display: inline-block;
+    line-height: 1;
+    border-bottom: 4px solid #FED700;
+}
+
+/* Main paragraph */
+.intro--landing--left h6 {
+    line-height: 1.67;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Play button */ 
+.button-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.outer_circle {
+    stroke-width: 3;
+    stroke-dasharray: 410; 
+     stroke-dashoffset: 0;
+    stroke-linecap: square;
+    transition: all .4s ease-out;
+}
+  
+.button-video:hover .outer_circle {
+    stroke-dashoffset:410;
+    transition: stroke .7s .4s ease-out, stroke-dashoffset .4s ease-out
+}
+  
+.button-video:hover .inner-circle {
+    fill: #FED700;
+    transition:fill .4s .3s ease-out;
+    
+}
+  
+.button-video:hover .play{
+    fill: #121A3E;
+    transition:fill .4s .3s ease-out;
+}
+
+.modal-dialog {
+    max-width: 50% !important;
+    width: 50% !important;
+    height: 50% !important;
+    margin: 0 auto !important;
+    padding: 0;
+}
+  
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+}
+
+.fade {
+    transition: opacity 1s ease-in-out !important;
+}
+.modal-backdrop.fade {
+    opacity: 0.75 !important;
+    transition: opacity 1s ease-in-out !important;
+
+}
+
+/* hides white body of modal*/
+.modal-body {
+    padding: 0 !important;
+    height: 1px !important;
+}
+/* Buttons in the landing */
+.list-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.list-buttons--intro {
+    justify-content: flex-start;
+}
+
+.list-buttons li + li {
+    margin-left: 44px;
+}

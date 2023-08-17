@@ -1,5 +1,4 @@
 .header{
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -9,6 +8,8 @@
     transition: background 0.2s ease-in-out, padding 0.2s ease-in-out;
     background: #121A3E;
     color: #FFFF;
+    margin-bottom: 10px;
+    display: block;
 }
 
 @media (min-width: 576px){
