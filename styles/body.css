@@ -8,13 +8,14 @@
     src: url(/public/fonts/Lato-Black.ttf);
 }
 
-body{
+body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 1.3;
     color: #384062;
     text-align: left;
 }
+
 * {
     font-family: "Lato";
 }
@@ -25,16 +26,27 @@ a {
 }
 
 li a {
-    text-decoration:  none !important;
+    text-decoration: none !important;
 }
 
 h6 {
     font-size: 18px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600 !important ;
+h5 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600 !important;
+}
+
 ul li {
     list-style: none outside none;
 }

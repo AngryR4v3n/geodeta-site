@@ -1,4 +1,4 @@
-.header{
+.header {
     top: 0;
     left: 0;
     right: 0;
@@ -10,14 +10,21 @@
     color: #FFFF;
     margin-bottom: 10px;
     display: block;
+    position: sticky;
 }
 
-@media (min-width: 576px){
+.header.sticky {
+    padding: 15px 0;
+    background: #121A3E;
+}
+
+@media (min-width: 576px) {
     .container {
         max-width: 1200px;
-      }
-      
+    }
+
 }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -25,13 +32,13 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
-  }
+}
 
 .header .header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
 .header .header__content {
     flex: 1;
@@ -53,35 +60,38 @@
     list-style: none;
 }
 
-.nav > ul {
+.nav>ul {
     display: flex;
     align-items: center;
     margin-bottom: 0;
     color: #FFFF;
 }
 
-.nav > ul > li {
+.nav>ul>li {
     position: relative;
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
 }
 
-.nav > ul > li + li {
+.nav>ul>li+li {
     margin-left: 40px;
-  }
-nav ul, nav ol {
+}
+
+nav ul,
+nav ol {
     list-style: none outside none;
 }
+
 /*Header style*/
-.nav > ul > li {
+.nav>ul>li {
     position: relative;
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
 }
 
-.nav > ul > li > ul::after {
+.nav>ul>li>ul::after {
 
     content: "";
     position: absolute;
@@ -95,7 +105,7 @@ nav ul, nav ol {
 }
 
 /*Link dropdown*/
-.nav > ul > li > ul {
+.nav>ul>li>ul {
     position: absolute;
     top: 100%;
     left: -77px;
@@ -110,11 +120,11 @@ nav ul, nav ol {
 }
 
 /* li elements of the dropdown */
-.nav > ul > li > ul > li:first-child {
+.nav>ul>li>ul>li:first-child {
     padding-top: 22px;
-  }
+}
 
-.nav > ul > li > ul > li {
+.nav>ul>li>ul>li {
     padding: 5px 20px 5px;
     padding-top: 5px;
     border-right: 3px solid rgba(166, 175, 194, 0.25);
@@ -122,21 +132,23 @@ nav ul, nav ol {
 }
 
 /* a inside the li of the dropdown */
-.nav > ul > li > ul > li > a {
+.nav>ul>li>ul>li>a {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 /* Title of sublink */
-.nav > ul > li > ul > li > a > p.nav--sub-link {
+.nav>ul>li>ul>li>a>p.nav--sub-link {
     flex: 1 1 auto;
     margin-top: -1px;
     color: #384062;
     font-size: 16px;
     font-weight: 600;
 }
+
 /* Description of sublink */
-.nav > ul > li > ul > li > a > p.nav--sub-link span {
+.nav>ul>li>ul>li>a>p.nav--sub-link span {
     display: block;
     margin-top: 4px;
     color: rgba(67, 71, 88, 0.7);
@@ -145,7 +157,7 @@ nav ul, nav ol {
     line-height: 1.2;
 }
 
-.nav > ul > li > a {
+.nav>ul>li>a {
     position: relative;
     color: inherit;
     letter-spacing: -0.01em;
@@ -156,7 +168,7 @@ nav ul, nav ol {
 }
 
 /*Arrow up*/
-.nav > ul > li.hasDropdown > a::before {
+.nav>ul>li.hasDropdown>a::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -175,7 +187,7 @@ nav ul, nav ol {
     transition: opacity 0.3s ease-in-out;
 }
 
-.nav > ul > li.navLink > a::after {
+.nav>ul>li.navLink>a::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -185,11 +197,11 @@ nav ul, nav ol {
     margin-top: 5px;
     background: #FED700;
     transition: width 0.5s ease-in-out;
-  }
+}
 
 
 
-  /* Basic button styles */
+/* Basic button styles */
 .custom-button {
     display: inline-block;
     padding: 15px 20px;
@@ -206,7 +218,7 @@ nav ul, nav ol {
     border-radius: 4px;
     border-width: 2px;
 }
-  
+
 /* Change button color on hover */
 .custom-button:hover {
     background-color: #121A3E;
@@ -218,27 +230,27 @@ nav ul, nav ol {
 
 
 }
- 
-  
+
+
 /* Large screens only */
-@media (min-width: 768px){
-    .nav > ul > li > a:hover::after {
+@media (min-width: 768px) {
+    .nav>ul>li>a:hover::after {
         width: 100%;
     }
 
-    .nav > ul > li:hover > ul {
+    .nav>ul>li:hover>ul {
         opacity: 1;
         max-height: unset;
         pointer-events: all;
-      }
+    }
 
-    .nav > ul > li > ul > li:hover {
+    .nav>ul>li>ul>li:hover {
         background: #F7F8F9;
         border-color: #FED700;
-      }
-    
-    .nav > ul > li:hover > a::before {
+    }
+
+    .nav>ul>li:hover>a::before {
         opacity: 1;
         visibility: visible;
-      }
+    }
 }

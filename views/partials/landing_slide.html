@@ -1,30 +1,31 @@
-<div class="landing-carousel-photo-container">
-    <div class="landing-carousel-photo-container" style="background-image:url(/static/v2/images/landing-carousel/organic-ovals.3c0dd81e2866.svg)">
-        <img class="landing-carousel-photo" src="static/v2/images/landing-carousel/jake.w250.jpg" alt="Picture of jake" loading="lazy">
+<div class="landing-carousel-photo-container"
+    style="background-image:url(/static/v2/images/landing-carousel/organic-ovals.3c0dd81e2866.svg)">
+    <img class="landing-carousel-photo" src="<%=slideInfo.photoPath%>" alt="<%slideInfo.photoDesc%>" loading="lazy">
+
+</div>
+<div class="landing-carousel-testimonial-container">
+    <div class="landing-carousel-quote">
+        <h6 style="font-weight: normal !important;"><%=slideInfo.description%></h6>
     </div>
-    <div class="landing-carousel-testimonial-container">
-        <div class="landing-carousel-quote">
-            <h6 style="font-weight: normal;">We migrated to a headless infrastructure to enable <b>rapid A/B test iteration</b>, which has <b>driven a double-digit impact on our profit margin</b>. We also love having the rigor of Git version control over our HTML, while <b>giving our marketing team autonomy</b> over the copy and content itself.</h6>
+    <div class="landing-carousel-attribution-row">
+        <div class="landing-carousel-attribution-left-column">
+            <div class="landing-carousel-name-row">
+                <div class="landing-carousel-name-box">
+                    <h5 class="landing-carousel-name"><%=slideInfo.author%></h5>
+                </div>
+                <div class="landing-carousel-name-row-line-box">
+                    <div class="landing-carousel-name-row-line"></div>
+                </div>
+            </div>
+            <div class="landing-carousel-info-row">
+                <h6 class="landing-carousel-info">
+                    <%=slideInfo.enterprise%>
+                </h6>
+            </div>
         </div>
-        <div class="landing-carousel-attribution-row">
-            <div class="landing-carousel-attribution-left-column">
-                <div class="landing-carousel-name-row">
-                    <div class="landing-carousel-name-box">
-                        <h5 class="landing-carousel-name">Jake Kring</h5>
-                    </div> 
-                    <div class="landing-carousel-name-row-line-box">
-                        <div class="landing-carousel-name-row-line"></div>
-                    </div>
-                </div>
-                <div class="landing-carousel-info-row">
-                    <h6 class="landing-carousel-info">
-                        CTO, Skylight Frames
-                    </h6>
-                </div>
-            </div>
-            <div class="landing-carousel-quotation-box">
-                <img class="landing-carousel-quotation-mark lazyloaded" data-src="/static/v2/images/landing-carousel/icon-quote.31f26ac4f920.svg" alt="an icon of a quotation mark" src="/static/v2/images/landing-carousel/icon-quote.31f26ac4f920.svg">
-            </div>
+        <div class="landing-carousel-quotation-box">
+            <img class="landing-carousel-quotation-mark lazyloaded" width="112px" height="100px" style="opacity: 0.20;"
+                alt="an icon of a quotation mark" src="public/quote-svgrepo-com.svg">
         </div>
     </div>
 </div>

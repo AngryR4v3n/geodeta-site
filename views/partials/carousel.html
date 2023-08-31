@@ -1,5 +1,5 @@
 <div class="container">
-  <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+  <div id="projectCarousel" class="carousel slide row" data-ride="carousel">
     <ol class="carousel-indicators">
       <%carouselSlides.forEach(element=> { %>
         <% if(element.id === 0) { %>
@@ -9,28 +9,18 @@
         <%}%>
       <%});%>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner landing-carousel-inner">
       <%carouselSlides.forEach(element=> { %>
-        <% if(element.id === 0) { %>
-          <div class="carousel-item active">
-            <%- include("landing_slide.html", {slideInfo:element}) %> 
-            <img class="d-block w-100" src="<%=element.photoPath%>" alt="<%element.photoDesc%>">
+        <% if(element.id===0) { %>
+          <div class="landing-carousel-slide carousel-item col-12 active">
+            <%- include("landing_slide.html", {slideInfo:element}) %>
           </div>
-        <%} else {%>
-          <div class="carousel-item">
-            <%- include("landing_slide.html", {slideInfo:element}) %> 
-            <img class="d-block w-100" src="<%=element.photoPath%>" alt="<%element.photoDesc%>">
-          </div>
-        <%}%>
-      <%});%>
+          <%} else {%>
+            <div class="landing-carousel-slide carousel-item col-12">
+              <%- include("landing_slide.html", {slideInfo:element}) %>
+            </div>
+            <%}%>
+              <%});%>
     </div>
-    <a class="carousel-control-prev" href="#carouselPrevious" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselForward" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 </div>
