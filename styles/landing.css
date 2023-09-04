@@ -1,4 +1,4 @@
-.intro--landing{
+.intro--landing {
     color: #121A3E;
     text-align: left;
     padding-top: 34px;
@@ -38,36 +38,36 @@
     margin-bottom: 2em;
 }
 
-/* Play button */ 
+/* Play button */
 .button-video {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  
+
 .outer_circle {
     stroke-width: 3;
-    stroke-dasharray: 410; 
-     stroke-dashoffset: 0;
+    stroke-dasharray: 410;
+    stroke-dashoffset: 0;
     stroke-linecap: square;
     transition: all .4s ease-out;
 }
-  
+
 .button-video:hover .outer_circle {
-    stroke-dashoffset:410;
+    stroke-dashoffset: 410;
     transition: stroke .7s .4s ease-out, stroke-dashoffset .4s ease-out
 }
-  
+
 .button-video:hover .inner-circle {
     fill: #FED700;
-    transition:fill .4s .3s ease-out;
-    
+    transition: fill .4s .3s ease-out;
+
 }
-  
-.button-video:hover .play{
+
+.button-video:hover .play {
     fill: #121A3E;
-    transition:fill .4s .3s ease-out;
+    transition: fill .4s .3s ease-out;
 }
 
 .modal-dialog {
@@ -77,7 +77,7 @@
     margin: 0 auto !important;
     padding: 0;
 }
-  
+
 .modal-content {
     height: auto;
     min-height: 100%;
@@ -87,6 +87,7 @@
 .fade {
     transition: opacity 1s ease-in-out !important;
 }
+
 .modal-backdrop.fade {
     opacity: 0.75 !important;
     transition: opacity 1s ease-in-out !important;
@@ -98,6 +99,7 @@
     padding: 0 !important;
     height: 1px !important;
 }
+
 /* Buttons in the landing */
 .list-buttons {
     display: flex;
@@ -111,6 +113,47 @@
     justify-content: flex-start;
 }
 
-.list-buttons li + li {
+.list-buttons li+li {
     margin-left: 44px;
 }
+
+.section-solutions {
+    padding: 100px 0 121px;
+    text-align: center;
+}
+
+.section-solutions .section__head {
+    margin-bottom: 74px;
+}
+
+.section-solutions .section__head h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.22;
+    color: #151E46;
+}
+
+.section-solutions .section__body {
+    max-width: 1340px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section-solutions .section__actions {
+    margin-top: 59px;
+}
+
+.list-solutions {
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0 !important;
+}
+
+.list-solutions li {
+    position: relative;
+    padding: 0 6px;
+    font-size: 16px;
+    line-height: 1.65;
+}
+

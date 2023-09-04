@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/landing.css">
     <link rel="stylesheet" href="/styles/landingSlide.css">
     <link rel="stylesheet" href="/styles/carousel.css">
+    <link rel="stylesheet" href="/styles/zigzag.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
@@ -30,12 +31,42 @@
         <div class="intro intro--landing">
             <%- include('partials/intro_landing.html') -%>
         </div>
-        <div style="display: flex;">
-            <h1 style="margin: 0 auto !important;">Over 200 projects done!</h1>
-        </div>
-        <br>
         <%- include('partials/carousel.html', {carouselSlides: carouselSlides})%> 
-        <br>
+        
+        <section class="section-solutions">
+            <div class="container">
+                <div class="section__head">
+                    <h2>We make your projects achievable</h2>
+                    <img src="/public/cad_project_ai.webp" alt="" style="width: 60%;">
+                    <br>
+                    <br>
+                    <h2>Through hard work and expertise</h2>
+                </div>
+                <div class="section_body">
+                    <ul class="list-solutions row">
+                        <li class="col-md-4">
+                            <img src="/public/geodetic.png" style="width: 50%" alt="Topography icons created by Fhmrvi94 - Flaticon">
+                            <h4>Precision tools</h4>
+                            <p>Revolutionize your land surveying projects with our Total Station technology. Achieve precision and efficiency like never before for accurate data that drives better decisions.</p>
+                        </li>
+                        <li class="col-md-4">
+                            <img src="/public/cad.png" style="width: 50%" alt="Cad file icons created by Freepik - Flaticon">
+                            <h4>Modern Software</h4>
+                            <p>Unlock the full potential of your land surveying projects with AutoCAD. Our expertise in this industry-standard software ensures precise and professional mapping.</p>
+                        </li>
+                        <li class="col-md-4">
+                            <img src="/public/sextant.png" style="width: 50%">
+                            <h4>Experience</h4>
+                            <p>Unmatched expertise of a dedicated land surveyor. With a proven track record of precision and reliability in land surveying.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sections_actions">
+                    <a href="/solutions/" class="button button--solid-dark-blue">View Solutions</a>
+                </div>
+            </div>
+        </section>
+        <%- include('partials/zigzag.html') -%>
         <%- include('partials/footer.html') -%>
     </div>
 </body>
