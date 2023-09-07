@@ -18,14 +18,14 @@ app.use((req, res, next) => {
 })
 
 let siteMap = [
-  { "title": "About us", "hasDropdown": false, "link": "/link1" },
+  { "title": "Home", "hasDropdown": false, "link": "/" },
   {
-    "title": "Services", "hasDropdown": true, "link": "/link2", "sublink": [
-      { "title": "Experience", "link": "/link2/a", "description": "Over 200 projects, across Poland" },
-      { "title": "Get a quota", "link": "/link2/a", "description": "Accessible, and financiable quotas." }
+    "title": "Services", "hasDropdown": true, "link": "#", "sublink": [
+      { "title": "Get a quota", "link": "/pricing", "description": "Accessible, and financiable quotas." },
+      { "title": "Projects", "link": "/projects", "description": "Over 200 projects, across Poland" },
     ]
   },
-  { "title": "Gallery", "hasDropdown": true, "link": "/link3", "sublink": [{ "title": "Photos", "link": "/link3/b", "description": "Check our latest projects!" }] },
+  { "title": "About us", "hasDropdown": false, "link": "/about-us",},
   { "title": "Gallery", "hasDropdown": true, "link": "/link3", "sublink": [{ "title": "Photos", "link": "/link3/b", "description": "Check our latest projects!" }] },
   { "title": "Gallery", "hasDropdown": true, "link": "/link3", "sublink": [{ "title": "Photos", "link": "/link3/b", "description": "Check our latest projects!" }] }
 ];
@@ -37,12 +37,16 @@ let carouselSlides = [
 ];
 
 app.get('/', (req, res) => {
-  res.render('landing.html', { carouselSlides: carouselSlides, navBarOptions: siteMap, title: "Hello" });
+  res.render('landing.html', { carouselSlides: carouselSlides, navBarOptions: siteMap, title: "Geodezja" });
 });
 
-app.get('/test', (req, res) => {
+app.get('/projects', (req, res) => {
+  res.render('projects.html', {navBarOptions: siteMap, title: "Our projects"})
+});
 
-  res.render('testing.html', { navBarOptions: siteMap, title: "Hello" })
+app.get('/pricing', (req, res) => {
+
+  res.render('pricing.html', { navBarOptions: siteMap, title: "Hello" })
 
 });
 

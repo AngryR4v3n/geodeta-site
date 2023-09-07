@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        Title
+    </title>
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/body.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/pricing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="/public/scripts/stickyBehavior.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <%- include('partials/header.html', {navBarOptions: navBarOptions}) -%>
+    <div class="no-gutters">
+        <section>
+            <div class="container">
+                <div class="content">
+                    <div class="title-subtitle">
+                        <h1>Mapping Your Future at a Fair Price</h1>
+                        <h6>Get to know what services we offer for all your land surveying needs</h6>
+                    </div>
+                    <div class="services-categories">
+                        <div class="row">
+                            <!-- For each of plans... -->
+                            <div class="col-12 col-sm-12 col-md-3">
+                                <div class="plan">
+                                    <div class="plan-head">
+                                        <h5>Small plan</h5>
+                                        <p>This is a small plan</p>
+                                    </div>
+                                    <div class="plan-body">
+                                        <div class="plan-price">
+                                            <div class="plan-price-content">
+                                                <p>500</p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-content">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+
+                                        </div>
+                                        <!-- Optional -->
+                                        <div class="plan-actions">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

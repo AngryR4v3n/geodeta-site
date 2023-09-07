@@ -86,7 +86,7 @@ nav ol {
 /*Header style*/
 .nav>ul>li {
     position: relative;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     white-space: nowrap;
 }
@@ -117,6 +117,7 @@ nav ol {
     pointer-events: none;
     z-index: 5;
     transition: opacity 0.3s ease-in-out;
+    padding-left: 0;
 }
 
 /* li elements of the dropdown */
@@ -129,6 +130,7 @@ nav ol {
     padding-top: 5px;
     border-right: 3px solid rgba(166, 175, 194, 0.25);
     transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-top-left-radius: 8px;
 }
 
 /* a inside the li of the dropdown */
@@ -143,7 +145,7 @@ nav ol {
     flex: 1 1 auto;
     margin-top: -1px;
     color: #384062;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -152,7 +154,7 @@ nav ol {
     display: block;
     margin-top: 4px;
     color: rgba(67, 71, 88, 0.7);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
 }
