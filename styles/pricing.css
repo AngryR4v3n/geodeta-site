@@ -12,6 +12,7 @@
     max-width: 100%;
     background: #fff;
     box-shadow: 0px 27px 58px 0px rgba(0, 0, 0, 0.07);
+    height: 95%;
 }
 
 .plan-head {
@@ -32,4 +33,90 @@
 
 .plan-head p {
     line-height: 1.75;
+}
+
+.plan-body {
+    padding: 0 22px 36px;
+}
+
+.plan-price {
+    position: relative;
+    padding: 15px 35px 9px;
+    color: #151E46;
+    border-bottom: 1px solid rgba(21, 30, 70, 0.12);
+}
+
+.plan-price p {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.plan-price p span {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.plan-content {
+    padding: 22px 17px;
+    margin-bottom: 20px;
+}
+
+.row-modified {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #151E46;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #151E46;
+}
+
+.button--solid-dark-blue:hover {
+    background: transparent;
+    color: #151E46;
+}
+
+.button--solid-dark-blue {
+    background: #151E46;
+    border-color: #151E46;
+    color: #fff;
+}
+
+.spaced {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

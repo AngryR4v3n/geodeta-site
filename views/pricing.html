@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>
-        Title
+        <%=title%>
     </title>
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/body.css">
@@ -19,52 +19,114 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <%- include('partials/header.html', {navBarOptions: navBarOptions}) -%>
-    <div class="no-gutters">
-        <section>
-            <div class="container">
-                <div class="content">
-                    <div class="title-subtitle">
-                        <h1>Mapping Your Future at a Fair Price</h1>
-                        <h6>Get to know what services we offer for all your land surveying needs</h6>
-                    </div>
-                    <div class="services-categories">
-                        <div class="row">
-                            <!-- For each of plans... -->
-                            <div class="col-12 col-sm-12 col-md-3">
-                                <div class="plan">
-                                    <div class="plan-head">
-                                        <h5>Small plan</h5>
-                                        <p>This is a small plan</p>
-                                    </div>
-                                    <div class="plan-body">
-                                        <div class="plan-price">
-                                            <div class="plan-price-content">
-                                                <p>500</p>
+        <div class="no-gutters">
+            <section>
+                <div class="container">
+                    <div class="content">
+                        <div class="title-subtitle">
+                            <h1>Mapping Your Future at a Fair Price</h1>
+                            <h6>Get to know what services we offer for all your land surveying needs</h6>
+                        </div>
+                        <div class="services-categories">
+                            <div class="row-modified">
+                                <!-- For each of plans... -->
+                                <%pricingPlans.forEach(plan=> {%>
+                                    <div class="col-12 col-sm-12 col-md-3">
+                                        <div class="plan">
+                                            <div class="plan-head">
+                                                <h5>
+                                                    <%=plan.title %>
+                                                </h5>
+                                                <p>
+                                                    <%=plan.description%>
+                                                </p>
+                                            </div>
+                                            <div class="plan-body">
+                                                <div class="plan-price">
+                                                    <div class="plan-price-content">
+                                                        <p>
+                                                            <%=plan.price%>
+                                                                <span>zł</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="plan-content">
+                                                    <ul>
+                                                        <% plan.items.forEach(item=> { %>
+                                                            <li>
+                                                                <img src="<%= item.path %>">
+                                                                <p>
+                                                                    <%= item.description %>
+                                                                </p>
+
+                                                            </li>
+                                                            <% }); %>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="plan-content">
-                                            <ul>
-                                                <li></li>
-                                                <li></li>
-                                            </ul>
-
-                                        </div>
-                                        <!-- Optional -->
-                                        <div class="plan-actions">
-
-                                        </div>
                                     </div>
+                                    <% }); %>
+                            </div>
+                            <div class="row-modified">
+                                <div class="more-info-plan">
+
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2>More information on our services</h2>
+                    <div class="row-modified">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Description</th>
+                                    <th> More info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- For each of services... -->
+                                <%services.forEach(service=> {%>
+                                    <tr>
+                                        <td>
+                                            <%= service.name %>
+                                        </td>
+                                        <td>
+                                            <%= service.description %>
+                                        </td>
+                                        <td><a href="<%= service.link %> ">See more information</a></td>
+                                    </tr>
+                                    <% }); %>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <br>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2>Our pricing</h2>
+                    <h6>Our pricing depends on the size of the project, the selected services and project-dependent
+                        factors. For more information check our services below</h6>
+                    <div class="row-modified spaced">
+                        <h3>Check out our project gallery through the years</h3>
+                    </div>
+                    <div class="row-modified spaced">
+                        <a href="/gallery" class="button button--solid-dark-blue">Our gallery</a>
+                    </div>
+                    <br>
+                </div>
+            </section>
+            <%- include('partials/footer.html') -%>
+
+        </div>
 </body>

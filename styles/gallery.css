@@ -1,0 +1,24 @@
+.carousel-control-next-icon {
+    padding: 24px;
+}
+
+.carousel-control-prev-icon {
+    padding: 24px;
+}
+
+.carousel-indicators li {
+    margin-bottom: 15px !important;
+}
+
+.spaced {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row-modified {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}

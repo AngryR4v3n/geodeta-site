@@ -97,8 +97,3 @@ ul li {
     border-color: #151E46;
     color: #fff;
 }
-
-.button--solid-dark-blue:hover {
-    background: transparent;
-    color: #151E46;
-}
