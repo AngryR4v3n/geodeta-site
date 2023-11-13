@@ -110,5 +110,9 @@ app.get("/aboutus", (req, res) => {
     footer: siteInfo.footer[req.lang]
   })
 });
+
+app.get("/healthz", (req, res) => {
+  res.status(200).send({uptime: process.uptime(), message: "OK", timestamp: Date.now()})
+})
 console.log(`Node up in port ${PORT}`)
 app.listen(PORT, null)
