@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>
-        Title
+        <%=title%>
     </title>
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/body.css">
@@ -26,12 +26,12 @@
 
 <body>
     <div class="wrapper">
-        <%- include('partials/header.html', {navBarOptions: navBarOptions}) -%>
+        <%- include('partials/header.html', {navBarOptions: navBarOptions, text: header}) -%>
         <div class="no-gutters">
             <section>
                 <div class="container">
-                    <h1 class="title">Our projects</h1>
-                    <h6>With extensive experience as a contractor specializing in land surveying, you have established yourself as a skilled professional in accurately measuring and mapping land for various construction and development projects. Your expertise in utilizing advanced technology and traditional surveying methods has made you a trusted and reliable resource for ensuring precise boundaries and topographical data, as well as providing essential legal documentation.</h6>
+                    <h1 class="title"><%=text.mainTitle%></h1>
+                    <h6><%=text.mainDesc%></h6>
 
                 </div>
 
@@ -39,26 +39,26 @@
                     <ul class="metrics">
                         <li class="metric">
                             <div class="metric__inner">
-                                <h3 class="counter" data-target="15"></h3>
-                                <p>Years of experience</p>
+                                <h3 class="counter" data-target="<%=text.itemValue1%>"></h3>
+                                <p><%=text.titleItem1%></p>
                             </div>
                         </li>
                         <li class="metric">
                             <div class="metric__inner">
-                                <h3 class="counter" data-target="1637351"></h3>
-                                <p>Surveyed m²</p>
+                                <h3 class="counter" data-target="<%=text.itemValue2%>"></h3>
+                                <p><%=text.titleItem2%></p>
                             </div>
                         </li>
                         <li class="metric">
                             <div class="metric__inner">
-                                <h3 class="counter" data-target="204"></h3>
-                                <p>Projects completed</p>
+                                <h3 class="counter" data-target="<%=text.itemValue3%>"></h3>
+                                <p><%=text.titleItem3%></p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="container">
-                    <h1 style="display:flex;justify-content: center;">Our timeline</h1>
+                    <h1 style="display:flex;justify-content: center;"><%=text.secondTitle%></h1>
                     <img src="/public/down-arrow.gif" id="down-gif">
                 </div>
             </section>
@@ -67,71 +67,47 @@
             <div class="tl">
                 <div class="tl-container tl-left">
                     <div class="tl-content">
-                        <h2>2017</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-                            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                            primis ea eam.
-                        </p>
+                        <h2><%=text.cardTitle1%></h2>
+                        <p><%=text.cardText1%></p>
+                        <a href="/service/1"><%=text.viewMoreText%></a>
                     </div>
                 </div>
                 <div class="tl-container tl-right">
                     <div class="tl-content">
-                        <h2>2016</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-                            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                            primis ea eam.
-                        </p>
+                        <h2><%=text.cardTitle2%></h2>
+                        <p><%=text.cardText2%></p>
+                        <a href="/service/2"><%=text.viewMoreText%></a>
                     </div>
                 </div>
                 <div class="tl-container tl-left">
                     <div class="tl-content">
-                        <h2>2015</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-                            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                            primis ea eam.
-                        </p>
+                        <h2><%=text.cardTitle3%></h2>
+                        <p><%=text.cardText3%></p>
+                        <a href="/service/3"><%=text.viewMoreText%></a>
                     </div>
                 </div>
                 <div class="tl-container tl-right">
                     <div class="tl-content">
-                        <h2>2012</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-                            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                            primis ea eam.
-                        </p>
+                        <h2><%=text.cardTitle4%></h2>
+                        <p><%=text.cardText4%></p>
+                        <a href="/service/4"><%=text.viewMoreText%></a>
                     </div>
                 </div>
                 <div class="tl-container tl-left">
                     <div class="tl-content">
-                        <h2>2011</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-                            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                            primis ea eam.
-                        </p>
+                        <h2><%=text.cardTitle5%></h2>
+                        <p><%=text.cardText5%></p>
+                        <a href="/service/5"><%=text.viewMoreText%></a>
                     </div>
                 </div>
                 <div class="tl-container tl-right">
                     <div class="tl-content">
-                        <h2>2007</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-                            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-                            primis ea eam.
-                        </p>
+                        <h2><%=text.cardTitle6%></h2>
+                        <p><%=text.cardText6%></p>
+                        <a href="/service/6"><%=text.viewMoreText%></a>
                     </div>
                 </div>
             </div>
     </div>
-    <%- include('partials/footer.html') -%>
+    <%- include('partials/footer.html', {text: footer}) -%>
 </body>

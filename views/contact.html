@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>
-        Title
+        <%=title%>
     </title>
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/body.css">
@@ -23,46 +23,81 @@
 
 <body>
     <div class="wrapper">
-        <%- include('partials/header.html', {navBarOptions: navBarOptions}) -%>
-
-            <section>
-
+        <%- include('partials/header.html', {navBarOptions: navBarOptions, text: header}) -%>
+            <section id="contact-methods">
                 <div class="vertical-separator">
                     <div class="left">
-                        <h1>Contact us</h1>
-                        <h6>For any inquiries about your specific project needs, don't hesitate to reach out. I'm glad
-                            to assist you.</h6>
+                        <h1><%=text.mainTitle%></h1>
+                        <h6><%=text.mainDesc%></h6>
                         <div class="contact-options">
                             <div class="option">
                                 <img src="/public/email-contact.png">
-                                <h4>Email</h4>
+                                <h4><%=text.emailLabel%></h4>
                                 <a href="mailto:this@email.com">
-                                    <h6>this@email.com</h6>
+                                    <h6><%=text.emailText%></h6>
                                 </a>
                             </div>
                             <div class="option">
                                 <img src="/public/phone-contact.png">
-                                <h4>Phone</h4>
-                                <a href="tel:+4812314515">
-                                    <h6>+48 12314515</h6>
+                                <h4><%=text.phoneLabel%></h4>
+                                <a href="tel:<%=text.phoneText%>">
+                                    <h6><%=text.phoneText%></h6>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="right">
-                        <img class="cover" src="/public/ny.jpg">
+                        <img class="cover" src="/public/project_3.jpg">
                     </div>
                 </div>
             </section>
+            <section id="working-hours-and-nip">
+                <div class="container contact">
+                    <div class="center">
+                        <div class="contact-info-head">
+                            <h2><%=text.secondTitle%></h2>
+                        </div>
+                        <div class="contact-info-body">
+                            <ul class="list-contact row">
+                                <li class="col-md-3">
+                                    <img src="/public/icons8-number-96.png"
+                                        alt="Topography icons created by Fhmrvi94 - Flaticon">
+                                    <h4><%=text.nipLabel%></h4>
+                                    <h6><%=text.nipText%></h6>
+                                </li>
+                                <li class="col-md-3">
+                                    <img src="/public/icons8-hashtag-large-96.png"
+                                        alt="Topography icons created by Fhmrvi94 - Flaticon">
+                                    <h4><%=text.regonLabel%></h4>
+                                    <h6><%=text.regonText%></h6>
+                                </li>
+                                <li class="col-md-3">
+                                    <img src="/public/icons8-address-96.png">
+                                    <h4><%=text.addressLabel%></h4>
+                                    <h6><%=text.addressText%></h6>
+                                </li>
+                                <li class="col-md-3">
+                                    <img src="/public/icons8-schedule-96.png">
+                                    <h4><%=text.workingHoursLabel%></h4>
+                                    <ul>
+                                        <li><strong><%=text.weekday%></strong><%=text.weekdaySchedule%></li>
+                                        <li><strong><%=text.saturday%></strong><%=text.saturdaySchedule%></li>
+                                        <li><strong><%=text.sunday%></strong><%=text.sundaySchedule%></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row spaced">
+                        <h1 class="centered"><%=text.goodbyeText%></h1>
 
+                    </div>
+                </div>
+            </section>
+            <%- include('partials/footer.html', {text: footer}) -%>
     </div>
-    <section>
-        <div class="container">
-            <div class="row spaced">
-                <h1 class="centered">Hope to collaborate with you soon!</h1>
-
-            </div>
-        </div>
-    </section>
-    <%- include('partials/footer.html') -%>
 </body>

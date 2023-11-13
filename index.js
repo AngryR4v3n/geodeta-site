@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const PORT = process.env.PORT || 3000
 const path = require('path');
-
+const siteInfo = require("./siteInfo/siteInfo.js")
 
 app.engine('.html', require('ejs').__express);
 app.set('views', path.join(__dirname, 'views'));
@@ -17,117 +17,98 @@ app.use((req, res, next) => {
   next();
 })
 
-let siteMap = [
-  { "title": "Home", "hasDropdown": false, "link": "/" },
-  {
-    "title": "Services", "hasDropdown": true, "link": "#", "sublink": [
-      { "title": "Get a quota", "link": "/pricing", "description": "Accessible, and financiable quotas." },
-      { "title": "Projects", "link": "/projects", "description": "Over 200 projects, across Poland" },
-    ]
-  },
-  { "title": "About us", "hasDropdown": false, "link": "/about-us", },
-  { "title": "Gallery", "hasDropdown": true, "link": "/gallery", "sublink": [{ "title": "Photos", "link": "/gallery", "description": "Check our latest projects!" }] },
-];
+app.use((req, res, next) => {
+  // This reads the accept-language header
+  // and returns the language if found or false if not
+  const lang = req.acceptsLanguages('pl', 'en')
 
-let carouselSlides = [
-  { "photoPath": "/public/chicago.jpg", "photoDesc": "a nice photo 1", "description": "Compassionate partners for your pet's health journey. Our veterinary services merge cutting-edge medical care with heartfelt attention, ensuring your furry companions receive the best possible treatment for a vibrant life.", "id": 0, "author": "Sandra Okruszko", "enterprise": "Qvetka sp. Z.O.O" },
-  { "photoPath": "/public/la.jpg", "photoDesc": "a nice photo 2", "description": "Crafting healthy smiles that leave a lasting impression. With a focus on precision and comfort, our dental care services prioritize your oral well-being, bringing out your confidence and brightest smile.", "id": 1, "author": "Anna Danilczuk", "enterprise": "Sloneczny Stok - Dental" },
-  { "photoPath": "/public/ny.jpg", "photoDesc": "a nice photo 3", "description": "Envisioning tomorrow's connected world, today. We spearhead IoT development, fusing innovation with technology to create seamless solutions. Our expertise drives efficiency, automation, and transformation across industries, reshaping the future.", "id": 2, "author": "Francisco Molina", "enterprise": "TTPSC" },
-];
+  if (lang) { // if found, attach it as property to the request
+    req.lang = lang
+  } else { // else set the default language
+    req.lang = 'en'
+  }
 
-
-let pricingPlans = [{
-  "title": "Basic Land Survey Services", "description": "This is a basic plan", "price": 500.00, "items": [
-    { "description": "Boundary Surveys", "path": "/public/icons8-fence-32.png" },
-    { "description": "Topographic Surveys", "path": "/public/icons8-waypoint-map-32.png" },
-    { "description": "Elevation Certificates", "path": "/public/icons8-height-32.png" },
-  ]
-},
-{
-  "title": "Construction Survey Services", "description": "This is a a medium plan", "price": 1200.00, "items": [
-    { "description": "Site Layout Surveys", "path": "/public/icons8-prototype-32.png" },
-    { "description": "Foundation Surveys", "path": "/public/icons8-foundation-32.png" },
-    { "description": "As-Built Surveys", "path": "/public/icons8-structural-32.png" },
-  ]
-},
-{
-  "title": "Specialized Land Survey Services", "description": "This is an advanced plan", "price": 2000.00, "items": [
-    { "description": "ALTA/NSPS Land Title Surveys", "path": "/public/icons8-compass-32.png" },
-    { "description": "Subdivision Planning and Design", "path": "/public/icons8-foundation-32.png" },
-    { "description": "Floodplain Mapping", "path": "/public/icons8-piping-32.png" },
-  ]
-},
-{
-  "title": "Specialized Land Survey Services", "description": "This is an advanced plan", "price": 2000.00, "items": [
-    { "description": "ALTA/NSPS Land Title Surveys", "path": "/public/icons8-compass-32.png" },
-    { "description": "Subdivision Planning and Design", "path": "/public/icons8-foundation-32.png" },
-    { "description": "Floodplain Mapping", "path": "/public/icons8-piping-32.png" },
-  ]
-},
-
-];
-
-let services = [{
-  "name": "Podział działki i nieruchomości",
-  "description": "Proces geodezyjnego podziału działki i tworzenia dokumentacji operatu technicznego.",
-  "link": "/service/1"
-},
-{
-  "name": "Tyczenie budynków",
-  "description": "Umiejscawianie budynków zgodnie z projektem i zezwoleniem.",
-  "link": "/service/2"
-},
-{
-  "name": "Wytyczenie i ustalenie granic nieruchomości",
-  "description": "Uprawniony geodeta wytycza granice działki i przywraca punkty graniczne na podstawie istniejących dokumentów ewidencyjnych.",
-  "link": "/service/3"
-},
-{
-  "name": "Obsługa geodezyjna inwestycji budowlanych",
-  "description": "Usługa geodezyjna w budownictwie obejmuje pomiary, wytyczanie i dokumentację.",
-  "link": "/service/4"
-
-},
-{
-  "name": "Prace geodezyjne na terenach kolejowych",
-  "description": "Wykonywanie pomiarów geodezyjnych i tworzenie map kolejowych.",
-  "link": "/service/5"
-
-},
-{
-  "name": "Mapy do celów projektowych",
-  "description": "Mapa do celów projektowych to kluczowa dokumentacja geodezyjna wymagana do uzyskania pozwolenia na budowę.",
-  "link": "/service/6"
-
-},
-{
-  "name": "Mapy 3D",
-  "description": "Usługi związane z mapami 3D to modelowanie, wizualizacja i analiza przestrzeni.",
-  "link": "/service/7"
-
-
-},
-];
+  next()
+})
 
 app.get('/', (req, res) => {
-  res.render('landing.html', { carouselSlides: carouselSlides, navBarOptions: siteMap, title: "Geodezja" });
+  res.render('landing.html', {
+    carouselSlides: siteInfo.carouselSlides[req.lang],
+    navBarOptions: siteInfo.siteMap[req.lang],
+    title: siteInfo.webTitles[req.lang].main,
+    text: siteInfo.landing[req.lang],
+    header: siteInfo.header[req.lang],
+    footer: siteInfo.footer[req.lang]
+  });
+
 });
 
 app.get('/projects', (req, res) => {
-  res.render('projects.html', { navBarOptions: siteMap, title: "Our projects" })
+  res.render('projects.html', {
+    title: siteInfo.webTitles[req.lang].projects,
+    header: siteInfo.header[req.lang],
+    navBarOptions: siteInfo.siteMap[req.lang],
+    footer: siteInfo.footer[req.lang],
+    text: siteInfo.projects[req.lang]
+  })
 });
 
 app.get('/pricing', (req, res) => {
-  res.render('pricing.html', { navBarOptions: siteMap, title: "Pricing", pricingPlans: pricingPlans, services: services });
+  res.render('pricing.html', {
+    title: siteInfo.webTitles[req.lang].pricing,
+    navBarOptions: siteInfo.siteMap[req.lang],
+    pricingPlans: siteInfo.pricing[req.lang].pricingColumns,
+    services: siteInfo.services[req.lang], // check the siteInfo.js 
+    header: siteInfo.header[req.lang],
+    footer: siteInfo.footer[req.lang],
+    text: siteInfo.pricing[req.lang]
+
+  });
 
 });
 
 app.get('/gallery', (req, res) => {
-  res.render('gallery.html', { navBarOptions: siteMap, title: "Our gallery" })
+  res.render('gallery.html', {
+    navBarOptions: siteInfo.siteMap[req.lang],
+    title: siteInfo.webTitles[req.lang].gallery,
+    text: siteInfo.gallery[req.lang],
+    photos: siteInfo.gallery[req.lang].photos,
+    header: siteInfo.header[req.lang],
+    footer: siteInfo.footer[req.lang],
+  })
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact.html', { navBarOptions: siteMap, title: "Contact us!" })
+  res.render('contact.html', { 
+    navBarOptions: siteInfo.siteMap[req.lang], 
+    title: siteInfo.webTitles[req.lang].contactUs,
+    text: siteInfo.contactUs[req.lang],
+    header: siteInfo.header[req.lang],
+    footer: siteInfo.footer[req.lang],
+
+  })
 });
 
-app.listen(port, null)
+app.get('/service/:id', (req, res) => {
+  let text = siteInfo.services[req.lang].moreInfo[req.params.id]
+  console.log(text)
+  res.render('serviceInfo.html', { 
+    navBarOptions: siteInfo.siteMap[req.lang],
+    title: "",
+    text: text,
+    header: siteInfo.header[req.lang],
+    footer: siteInfo.footer[req.lang]
+  })
+});
+
+app.get("/aboutus", (req, res) => {
+  res.render('about.html', { 
+    navBarOptions: siteInfo.siteMap[req.lang],
+    title: siteInfo.webTitles[req.lang].aboutus,
+    text: siteInfo.aboutUs[req.lang],
+    header: siteInfo.header[req.lang],
+    footer: siteInfo.footer[req.lang]
+  })
+});
+console.log(`Node up in port ${PORT}`)
+app.listen(PORT, null)

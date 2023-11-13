@@ -1,0 +1,49 @@
+.vertical-separator {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    width: 40%;
+    min-width: 600px;
+    text-align: justify;
+    height: fit-content;
+    margin-left: 50px;
+    border: none;
+    padding: 20px;
+}
+
+.right .card {
+    border: none;
+
+}
+
+.left {
+    width: 20%;
+    max-height: 500px;
+}
+
+.profile-img {
+    height: 400px;
+    max-width: 100%;
+}
+
+.card-img {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-name {
+    display: flex;
+    justify-content: center;
+}
+
+.spaced {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

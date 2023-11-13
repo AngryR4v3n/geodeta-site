@@ -21,14 +21,20 @@
 </head>
 
 <body>
-    <%- include('partials/header.html', {navBarOptions: navBarOptions}) -%>
+    <%- include('partials/header.html', {navBarOptions: navBarOptions, text: header}) -%>
         <div class="no-gutters">
+            <section>
+                <div class="container">
+                    <h2><%=text.mainTitle%></h2>
+                    <h6><%=text.mainDesc%></h6>
+                </div>
+            </section>
             <section>
                 <div class="container">
                     <div class="content">
                         <div class="title-subtitle">
-                            <h1>Mapping Your Future at a Fair Price</h1>
-                            <h6>Get to know what services we offer for all your land surveying needs</h6>
+                            <h1><%=text.secondTitle%></h1>
+                            <h6><%=text.secondDesc%></h6>
                         </div>
                         <div class="services-categories">
                             <div class="row-modified">
@@ -80,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- <section>
                 <div class="container">
                     <h2>More information on our services</h2>
                     <div class="row-modified">
@@ -89,44 +95,39 @@
                                 <tr>
                                     <th>Service</th>
                                     <th>Description</th>
-                                    <th> More info</th>
+                                    <th>More info</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- For each of services... -->
-                                <%services.forEach(service=> {%>
+                                <%//services.forEach(service=> {%>
                                     <tr>
                                         <td>
-                                            <%= service.name %>
+                                            <%=// service.name %>
                                         </td>
                                         <td>
-                                            <%= service.description %>
+                                            <%=// service.description %>
                                         </td>
-                                        <td><a href="<%= service.link %> ">See more information</a></td>
+                                        <td><a href="<%=// service.link %> ">See more information</a></td>
                                     </tr>
-                                    <% }); %>
+                                    <%// }); %>
                             </tbody>
                         </table>
 
                     </div>
                     <br>
                 </div>
-            </section>
+            </section> -->
             <section>
-                <div class="container">
-                    <h2>Our pricing</h2>
-                    <h6>Our pricing depends on the size of the project, the selected services and project-dependent
-                        factors. For more information check our services below</h6>
-                    <div class="row-modified spaced">
-                        <h3>Check out our project gallery through the years</h3>
-                    </div>
-                    <div class="row-modified spaced">
-                        <a href="/gallery" class="button button--solid-dark-blue">Our gallery</a>
-                    </div>
-                    <br>
+                <div class="row-modified spaced">
+                    <h3>Check out our project gallery through the years</h3>
                 </div>
+                <div class="row-modified spaced">
+                    <a href="/gallery" class="button button--solid-dark-blue">Our gallery</a>
+                </div>
+                <br>
             </section>
-            <%- include('partials/footer.html') -%>
+            
+            <%- include('partials/footer.html', {text: footer}) -%>
 
         </div>
 </body>

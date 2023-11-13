@@ -14,7 +14,7 @@
 
 .right {
     width: 67%;
-    height: 600px;
+    max-height: 500px;
 }
 
 #header {
@@ -40,7 +40,7 @@
     justify-content: center;
     text-align: center;
     width: 250px;
-    background-color: #ddd;
+    background-color: #fdfdfd;
 }
 
 .option img {
@@ -63,4 +63,24 @@
 
 .centered {
     margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.list-contact {
+    padding: 0;
+}
+
+.list-contact li ul {
+    padding: 0;
+}
+
+.contact {
+    box-shadow: 3px 38px 18px -10px rgba(36, 55, 87, 0.1);
+    background: #fdfdfd;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
 }

@@ -1,0 +1,15 @@
+#article {
+    min-height: 500px;
+}
+#article > * {
+    margin-bottom: 30px;
+}
+
+#article h6 {
+    text-align: justify;
+}
+
+#article ul li {
+    list-style-type: disc !important;
+    font-size: 18px;
+}
