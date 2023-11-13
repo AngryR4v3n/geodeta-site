@@ -79,8 +79,8 @@ app.get('/gallery', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact.html', { 
-    navBarOptions: siteInfo.siteMap[req.lang], 
+  res.render('contact.html', {
+    navBarOptions: siteInfo.siteMap[req.lang],
     title: siteInfo.webTitles[req.lang].contactUs,
     text: siteInfo.contactUs[req.lang],
     header: siteInfo.header[req.lang],
@@ -91,7 +91,7 @@ app.get('/contact', (req, res) => {
 
 app.get('/service/:id', (req, res) => {
   let text = siteInfo.services[req.lang].moreInfo[req.params.id]
-  res.render('serviceInfo.html', { 
+  res.render('serviceInfo.html', {
     navBarOptions: siteInfo.siteMap[req.lang],
     title: "",
     text: text,
@@ -101,7 +101,7 @@ app.get('/service/:id', (req, res) => {
 });
 
 app.get("/aboutus", (req, res) => {
-  res.render('about.html', { 
+  res.render('about.html', {
     navBarOptions: siteInfo.siteMap[req.lang],
     title: siteInfo.webTitles[req.lang].aboutus,
     text: siteInfo.aboutUs[req.lang],
@@ -111,7 +111,7 @@ app.get("/aboutus", (req, res) => {
 });
 
 app.get("/healthz", (req, res) => {
-  res.status(200).send({uptime: process.uptime(), message: "OK", timestamp: Date.now()})
+  res.status(200).send({ uptime: process.uptime(), message: "OK", timestamp: Date.now() })
 })
 console.log(`Node up in port ${PORT}`)
 app.listen(PORT, null)
