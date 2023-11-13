@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.use("/styles", express.static(path.join(__dirname, "styles")));
 app.set('view engine', 'html');
-
+console.log(`Working on :${__dirname}`)
 
 //Allow all https src
 app.use((req, res, next) => {
@@ -91,7 +91,6 @@ app.get('/contact', (req, res) => {
 
 app.get('/service/:id', (req, res) => {
   let text = siteInfo.services[req.lang].moreInfo[req.params.id]
-  console.log(text)
   res.render('serviceInfo.html', { 
     navBarOptions: siteInfo.siteMap[req.lang],
     title: "",
