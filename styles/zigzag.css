@@ -93,6 +93,7 @@
     display: flex;
     align-items: center;
     color: #fff;
+    text-align: justify;
 }
 
 .list-services p {

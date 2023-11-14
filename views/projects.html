@@ -15,7 +15,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <script src="/public/scripts/stickyBehavior.js"></script>
-    <script src="/public/scripts/counter.js"></script>
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,86 +27,160 @@
 <body>
     <div class="wrapper">
         <%- include('partials/header.html', {navBarOptions: navBarOptions, text: header}) -%>
-        <div class="no-gutters">
-            <section>
-                <div class="container">
-                    <h1 class="title"><%=text.mainTitle%></h1>
-                    <h6><%=text.mainDesc%></h6>
-
-                </div>
-
-                <div class="div-metrics">
-                    <ul class="metrics">
-                        <li class="metric">
-                            <div class="metric__inner">
-                                <h3 class="counter" data-target="<%=text.itemValue1%>"></h3>
-                                <p><%=text.titleItem1%></p>
-                            </div>
-                        </li>
-                        <li class="metric">
-                            <div class="metric__inner">
-                                <h3 class="counter" data-target="<%=text.itemValue2%>"></h3>
-                                <p><%=text.titleItem2%></p>
-                            </div>
-                        </li>
-                        <li class="metric">
-                            <div class="metric__inner">
-                                <h3 class="counter" data-target="<%=text.itemValue3%>"></h3>
-                                <p><%=text.titleItem3%></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="container">
-                    <h1 style="display:flex;justify-content: center;"><%=text.secondTitle%></h1>
-                    <img src="/public/down-arrow.gif" id="down-gif">
-                </div>
-            </section>
-            
-        </div>
+            <div class="no-gutters">
+                <section>
+                    <div class="container">
+                        <h1 class="title">
+                            <%=text.mainTitle%>
+                        </h1>
+                    </div>
+                </section>
+            </div>
             <div class="tl">
                 <div class="tl-container tl-left">
                     <div class="tl-content">
-                        <h2><%=text.cardTitle1%></h2>
-                        <p><%=text.cardText1%></p>
-                        <a href="/service/1"><%=text.viewMoreText%></a>
+                        <h2>
+                            <%=text.cardTitle1%>
+                        </h2>
+                        <p>
+                            <%=text.cardText1%>
+                        </p>
+                        <a href="/service/1">
+                            <%=text.viewMoreText%>
+                        </a>
                     </div>
                 </div>
                 <div class="tl-container tl-right">
                     <div class="tl-content">
-                        <h2><%=text.cardTitle2%></h2>
-                        <p><%=text.cardText2%></p>
-                        <a href="/service/2"><%=text.viewMoreText%></a>
+                        <h2>
+                            <%=text.cardTitle2%>
+                        </h2>
+                        <p>
+                            <%=text.cardText2%>
+                        </p>
+                        <a href="/service/2">
+                            <%=text.viewMoreText%>
+                        </a>
                     </div>
                 </div>
                 <div class="tl-container tl-left">
                     <div class="tl-content">
-                        <h2><%=text.cardTitle3%></h2>
-                        <p><%=text.cardText3%></p>
-                        <a href="/service/3"><%=text.viewMoreText%></a>
+                        <h2>
+                            <%=text.cardTitle3%>
+                        </h2>
+                        <p>
+                            <%=text.cardText3%>
+                        </p>
+                        <a href="/service/3">
+                            <%=text.viewMoreText%>
+                        </a>
                     </div>
                 </div>
                 <div class="tl-container tl-right">
                     <div class="tl-content">
-                        <h2><%=text.cardTitle4%></h2>
-                        <p><%=text.cardText4%></p>
-                        <a href="/service/4"><%=text.viewMoreText%></a>
+                        <h2>
+                            <%=text.cardTitle4%>
+                        </h2>
+                        <p>
+                            <%=text.cardText4%>
+                        </p>
+                        <a href="/service/4">
+                            <%=text.viewMoreText%>
+                        </a>
                     </div>
                 </div>
                 <div class="tl-container tl-left">
                     <div class="tl-content">
-                        <h2><%=text.cardTitle5%></h2>
-                        <p><%=text.cardText5%></p>
-                        <a href="/service/5"><%=text.viewMoreText%></a>
+                        <h2>
+                            <%=text.cardTitle5%>
+                        </h2>
+                        <p>
+                            <%=text.cardText5%>
+                        </p>
+                        <a href="/service/5">
+                            <%=text.viewMoreText%>
+                        </a>
                     </div>
                 </div>
                 <div class="tl-container tl-right">
                     <div class="tl-content">
-                        <h2><%=text.cardTitle6%></h2>
-                        <p><%=text.cardText6%></p>
-                        <a href="/service/6"><%=text.viewMoreText%></a>
+                        <h2>
+                            <%=text.cardTitle6%>
+                        </h2>
+                        <p>
+                            <%=text.cardText6%>
+                        </p>
+                        <a href="/service/6">
+                            <%=text.viewMoreText%>
+                        </a>
                     </div>
                 </div>
+            </div>
+            <div class="no-gutters">
+                <section>
+                    <div class="container">
+                        <img src="/public/down-arrow.gif" id="down-gif">
+                    </div>
+                    <div class="container">
+                        <h1 class="title">
+                            <%=text.secondTitle%>
+                        </h1>
+                    </div>
+                    <div class="div-metrics">
+                        <ul class="metrics">
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem1%>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem2%>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem3%>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem4%>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem5%>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem6%>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="metric">
+                                <div class="metric__inner">
+                                    <h3>
+                                        <%=text.titleItem7%>
+                                    </h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
             </div>
     </div>
     <%- include('partials/footer.html', {text: footer}) -%>
