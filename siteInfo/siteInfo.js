@@ -2,7 +2,7 @@ module.exports = {
     webTitles: {
         "en": {
             "main": "Land Surveyor Anna Dakowicz",
-            "projects": "Our projects",
+            "services": "Our services",
             "pricing": "Pricing",
             "gallery": "Gallery",
             "aboutus": "About us",
@@ -10,8 +10,8 @@ module.exports = {
         },
         "pl": {
             "main": "Geodeta Anna Dakowicz",
-            "projects": "Nasze projekty",
-            "pricing": "Oferta",
+            "services": "Nasze usługi",
+            "pricing": "Cennik",
             "gallery": "Galeria",
             "aboutus": "O nas",
             "contactus": "Skontaktuj się z nami"
@@ -23,8 +23,8 @@ module.exports = {
             { "title": "Home", "hasDropdown": false, "link": "/" },
             {
                 "title": "Services", "hasDropdown": true, "link": "#", "sublink": [
-                    { "title": "Get a quota", "link": "/pricing", "description": "Accessible, and financiable quotas." },
-                    { "title": "Projects", "link": "/projects", "description": "Over 200 projects, across Poland." },
+                    { "title": "Offers", "link": "/services", "description": "Check our available services." },
+                    { "title": "Our pricing", "link": "/pricing", "description": "Accessible, and financiable quotas." },
                 ]
             },
             { "title": "About us", "hasDropdown": false, "link": "/aboutus", },
@@ -34,8 +34,8 @@ module.exports = {
             { "title": "Strona Główna", "hasDropdown": false, "link": "/" },
             {
                 "title": "Usługi", "hasDropdown": true, "link": "#", "sublink": [
-                    { "title": "Oferta", "link": "/pricing", "description": "Dostępne i finansowalne oferty." },
-                    { "title": "Projekty", "link": "/projects", "description": "Ponad 200 projektów w całej Polsce." },
+                    { "title": "Oferta", "link": "/services", "description": "Sprawdź nasze dostępne usługi." },
+                    { "title": "Cennik", "link": "/pricing", "description": "Dostępne i finansowalne oferty." },
                 ]
             },
             { "title": "O nas", "hasDropdown": false, "link": "/aboutus", },
@@ -44,21 +44,21 @@ module.exports = {
     },
     carouselSlides: {
         "en": [
-            { "photoPath": "/public/chicago.jpg", "photoDesc": "a nice photo 1", "description": "Compassionate partners for your pet's health journey. Our veterinary services merge cutting-edge medical care with heartfelt attention, ensuring your furry companions receive the best possible treatment for a vibrant life.", "id": 0, "author": "Sandra Okruszko", "enterprise": "Qvetka sp. Z.O.O" },
-            { "photoPath": "/public/la.jpg", "photoDesc": "a nice photo 2", "description": "Crafting healthy smiles that leave a lasting impression. With a focus on precision and comfort, our dental care services prioritize your oral well-being, bringing out your confidence and brightest smile.", "id": 1, "author": "Anna Danilczuk", "enterprise": "Sloneczny Stok - Dental" },
-            { "photoPath": "/public/ny.jpg", "photoDesc": "a nice photo 3", "description": "Envisioning tomorrow's connected world, today. We spearhead IoT development, fusing innovation with technology to create seamless solutions. Our expertise drives efficiency, automation, and transformation across industries, reshaping the future.", "id": 2, "author": "Francisco Molina", "enterprise": "TTPSC" },
+            { "photoPath": "/public/male_pic.png", "photoDesc": "a nice photo 1", "description": "Full professionalism. Order completed on time. I strongly recommend.", "id": 0, "author": "Czesław P.", "enterprise": "" },
+            { "photoPath": "/public/female_pic.png", "photoDesc": "a nice photo 2", "description": "A lot of experience and great contact with the customer made it possible to quickly implement the service. Ms. Anna uses modern equipment at work so all measurements are very accurate and there were no corrections. I will definitely also cooperate with Ms. Anna in the future.", "id": 1, "author": "Dorota W.", "enterprise": "" },
+            { "photoPath": "/public/female_pic.png", "photoDesc": "a nice photo 3", "description": "If someone is looking for a really great surveyor,I highly recommend.  Ms. Anna is one of the best and most accurate surveyors in their profession, has worked in this profession for many years. I recommend to everyone with a clear conscience.", "id": 2, "author": "Aleksandra B.", "enterprise": "" },
         ],
         "pl": [
-            { "photoPath": "/public/chicago.jpg", "photoDesc": "a nice photo 1", "description": "Compassionate partners for your pet's health journey. Our veterinary services merge cutting-edge medical care with heartfelt attention, ensuring your furry companions receive the best possible treatment for a vibrant life.", "id": 0, "author": "Sandra Okruszko", "enterprise": "Qvetka sp. Z.O.O" },
-            { "photoPath": "/public/la.jpg", "photoDesc": "a nice photo 2", "description": "Crafting healthy smiles that leave a lasting impression. With a focus on precision and comfort, our dental care services prioritize your oral well-being, bringing out your confidence and brightest smile.", "id": 1, "author": "Anna Danilczuk", "enterprise": "Sloneczny Stok - Dental" },
-            { "photoPath": "/public/ny.jpg", "photoDesc": "a nice photo 3", "description": "Envisioning tomorrow's connected world, today. We spearhead IoT development, fusing innovation with technology to create seamless solutions. Our expertise drives efficiency, automation, and transformation across industries, reshaping the future.", "id": 2, "author": "Francisco Molina", "enterprise": "TTPSC" },
+            { "photoPath": "/public/male_pic.png", "photoDesc": "a nice photo 1", "description": "Pełen profesjonalizm. Zlecenie wykonane w terminie. Zdecydowanie polecam. ", "id": 0, "author": "Czesław P.", "enterprise": "" },
+            { "photoPath": "/public/female_pic.png", "photoDesc": "a nice photo 2", "description": "Duże doświadczenie i świetny kontakt z klientem umożliwił szybką realizację usługi. Pani Ania wykorzystuje nowoczesny sprzęt w pracy więc wszystkie pomiary są bardzo dokładne i obyło się bez poprawek. Na pewno w przyszłości również podejmę współpracę z Panią Anią.", "id": 1, "author": "Dorota W.", "enterprise": "" },
+            { "photoPath": "/public/female_pic.png", "photoDesc": "a nice photo 3", "description": "Jeśli ktoś ze szuka naprawdę świetnego geodety,to polecam serdecznie.  Pani Ania jest jednym z najlepszych i najdokładniejszych geodetów w swoim fachu,przepracowała w tym zawodzie już wiele lat. Polecam każdemu z czystym sumieniem.", "id": 2, "author": "Aleksandra B.", "enterprise": "" },
         ]
     },
     landing: {
         "en": {
             "landingIntro": {
-                "MainTitle": "Ania, the professional",
-                "MainTitleUnderlined": "Land surveyor",
+                "MainTitle": "Ania Dakowicz",
+                "MainTitleUnderlined": "the land surveyor",
                 "MainTitleDesc": "Ania is a professional geodeta in the Podlaskie area of Poland, years of experience and complete satisfaction. Ania is the person your project.",
                 "YellowButtonAboutUs": "Get to know Ania",
                 "BlueButtonProjects": "Projects"
@@ -95,7 +95,7 @@ module.exports = {
                 "MainTitleUnderlined": "geodeta",
                 "MainTitleDesc": "Świadczę profesjonalne usługi geodezyjne na terenie województwa podlaskiego.",
                 "YellowButtonAboutUs": "Poznaj Anię",
-                "BlueButtonProjects": "Projekty"
+                "BlueButtonProjects": "Oferta"
             },
             "secondTitle": "Zrealizuj swój projekt z naszym wsparciem",
             "thirdTitle": "Dzięki ciężkiej pracy i wiedzy",
@@ -134,6 +134,7 @@ module.exports = {
     },
     footer: {
         "en": {
+            "Main": "Main site",
             "AboutUs": "About us",
             "Services": "Services",
             "Gallery": "Gallery",
@@ -141,6 +142,7 @@ module.exports = {
             "titleLabel2": "Site map"
         },
         "pl": {
+            "Main": "Strona Główna",
             "AboutUs": "O nas",
             "Services": "Usługi",
             "Gallery": "Obrazy",
@@ -150,15 +152,16 @@ module.exports = {
     },
     projects: {
         "en": {
-            "mainTitle": "About our projects",
+            "mainTitle": "About our services",
             "mainDesc": "With extensive experience as a contractor specializing in land surveying, we have established ourselves as skilled professionals in accurately measuring and mapping land for various construction and development projects. Our expertise in utilizing advanced technology and traditional surveying methods has made us a trusted and reliable resource for ensuring precise boundaries and topographical data, as well as providing essential legal documentation.",
-            "titleItem1": "Years of experience",
-            "itemValue1": "15",
-            "titleItem2": "Surveyed m²",
-            "itemValue2": "1637351",
-            "titleItem3": "Projects completed",
-            "itemValue3": "204",
-            "secondTitle": "Our services",
+            "titleItem1": "EwMapa",
+            "titleItem2": "TurboMap",
+            "titleItem3": "GstarCAD",
+            "titleItem4": "GoKart",
+            "titleItem5": "Mikromap",
+            "titleItem6": "Winkalk",
+            "titleItem7": "C-GEO",
+            "secondTitle": "Programs we are working with",
             "viewMoreText": "Learn more",
             "cardTitle1": "Division of land and real estate",
             "cardText1": "The geodetic division of a plot of land and real estate is the physical separation of two or more plots of land from the original registered plot, containing the boundaries of the plot before the division.",
@@ -293,68 +296,21 @@ module.exports = {
     pricing: {
 
         "en": {
-            "mainTitle": "Our pricing",
-            "mainDesc": "Our pricing depends on the size of the project, the selected services and project-dependent factors. For more information check our services below.",
             "secondTitle": "Mapping your future at fair price",
-            "secondDescf": "Get to know what services we offer for all your land surveying needs.",
-            "pricingColumns": [{
-                "title": "Basic Land Survey Services", "description": "This is a basic plan", "price": 500.00, "items": [
-                    { "description": "Boundary Surveys", "path": "/public/icons8-fence-32.png" },
-                    { "description": "Topographic Surveys", "path": "/public/icons8-waypoint-map-32.png" },
-                    { "description": "Elevation Certificates", "path": "/public/icons8-height-32.png" },
-                ]
-            },
-
-            {
-                "title": "Construction Survey Services", "description": "This is a a medium plan", "price": 1200.00, "items": [
-                    { "description": "Site Layout Surveys", "path": "/public/icons8-prototype-32.png" },
-                    { "description": "Foundation Surveys", "path": "/public/icons8-foundation-32.png" },
-                    { "description": "As-Built Surveys", "path": "/public/icons8-structural-32.png" },
-                ]
-            },
-            {
-                "title": "Specialized Land Survey Services", "description": "This is an advanced plan", "price": 2000.00, "items": [
-                    { "description": "ALTA/NSPS Land Title Surveys", "path": "/public/icons8-compass-32.png" },
-                    { "description": "Subdivision Planning and Design", "path": "/public/icons8-foundation-32.png" },
-                    { "description": "Floodplain Mapping", "path": "/public/icons8-piping-32.png" },
-                ]
-            },
-            ],
-            "lastTitle": "Check out our project gallery through the years",
-            "galleryButton": "Our gallery"
+            "secondDesc": "Get to know what services we offer for all your land surveying needs.",
+            "pricingDesc": "Our pricing depends on the schedule and size of the project. For more information, please contact us.",
+            "lastTitle": "Check out our contact information",
+            "contactButton": "Contact us"
 
 
         },
 
         "pl": {
-            "mainTitle": "Nasz cennik",
-            "mainDesc": "Nasze ceny zależą od wielkości projektu, wybranych usług i czynników zależnych od projektu. Aby uzyskać więcej informacji, sprawdź nasze usługi poniżej.",
             "secondTitle": "Mapowanie przyszłości w uczciwej cenie",
             "secondDesc": "Dowiedz się, jakie usługi oferujemy dla wszystkich Twoich potrzeb geodezyjnych.",
-            "pricingColumns": [{
-                "title": "Basic Land Survey Services", "description": "This is a basic plan", "price": 500.00, "items": [
-                    { "description": "Boundary Surveys", "path": "/public/icons8-fence-32.png" },
-                    { "description": "Topographic Surveys", "path": "/public/icons8-waypoint-map-32.png" },
-                    { "description": "Elevation Certificates", "path": "/public/icons8-height-32.png" },
-                ]
-            },
-            {
-                "title": "Construction Survey Services", "description": "This is a a medium plan", "price": 1200.00, "items": [
-                    { "description": "Site Layout Surveys", "path": "/public/icons8-prototype-32.png" },
-                    { "description": "Foundation Surveys", "path": "/public/icons8-foundation-32.png" },
-                    { "description": "As-Built Surveys", "path": "/public/icons8-structural-32.png" },
-                ]
-            },
-            {
-                "title": "Specialized Land Survey Services", "description": "This is an advanced plan", "price": 2000.00, "items": [
-                    { "description": "ALTA/NSPS Land Title Surveys", "path": "/public/icons8-compass-32.png" },
-                    { "description": "Subdivision Planning and Design", "path": "/public/icons8-foundation-32.png" },
-                    { "description": "Floodplain Mapping", "path": "/public/icons8-piping-32.png" },
-                ]
-            },
-            ],
-            "lastTitle": "Zobacz galerię naszych projektów na przestrzeni lat",
-            "galleryButton": "Nasza galeria"
+            "pricingDesc": "Koszt realizacji każdego projektu jest wyceniany w sposób indywidualny. Jest on uzależniony od kompleksowości, czasu oraz zasobów niezbędnych do realizacji projektu. Po więcej informacji na temat kosztów współpracy zapraszamy do kontaktu telefonicznego lub drogą mailową.",
+            "lastTitle": "Sprawdź nasze dane kontaktowe",
+            "contactButton": "Kontakt z nami"
 
         }
     },
@@ -366,9 +322,14 @@ module.exports = {
             "previousButton": "Previous",
             "nextButton": "Next",
             "photos": [
-                { "id": 0, "src": "/public/chicago.jpg", "title": "Test 1", "desc": "description" },
-                { "id": 1, "src": "/public/ny.jpg", "title": "Test 2", "desc": "description 2" },
-                { "id": 2, "src": "/public/la.jpg", "title": "Test 3", "desc": "description 3" },
+                { "id": 0, "src": "/public/project_2.jpg", "title": "", "desc": "" },
+                { "id": 1, "src": "/public/project_3.jpg", "title": "", "desc": "" },
+                { "id": 2, "src": "/public/project_4.jpg", "title": "", "desc": "" },
+                { "id": 3, "src": "/public/project_5.jpg", "title": "", "desc": "" },
+                { "id": 4, "src": "/public/project_6.jpg", "title": "", "desc": "" },
+                { "id": 5, "src": "/public/project_7.jpg", "title": "", "desc": "" },
+                { "id": 6, "src": "/public/project_8.jpg", "title": "", "desc": "" },
+                { "id": 7, "src": "/public/project_9.jpg", "title": "", "desc": "" },
             ],
             "finalText": "Still interested? Contact us for more information!",
             "contactUs": "Contact us"
@@ -379,9 +340,14 @@ module.exports = {
             "previousButton": "Poprzedni",
             "nextButton": "Następny",
             "photos": [
-                { "id": 0, "src": "/public/chicago.jpg", "title": "Test 1", "desc": "description" },
-                { "id": 1, "src": "/public/ny.jpg", "title": "Test 2", "desc": "description 2" },
-                { "id": 2, "src": "/public/la.jpg", "title": "Test 3", "desc": "description 3" },
+                { "id": 0, "src": "/public/project_2.jpg", "title": "", "desc": "" },
+                { "id": 1, "src": "/public/project_3.jpg", "title": "", "desc": "" },
+                { "id": 2, "src": "/public/project_4.jpg", "title": "", "desc": "" },
+                { "id": 3, "src": "/public/project_5.jpg", "title": "", "desc": "" },
+                { "id": 4, "src": "/public/project_6.jpg", "title": "", "desc": "" },
+                { "id": 5, "src": "/public/project_7.jpg", "title": "", "desc": "" },
+                { "id": 6, "src": "/public/project_8.jpg", "title": "", "desc": "" },
+                { "id": 7, "src": "/public/project_9.jpg", "title": "", "desc": "" },
             ],
             "finalText": "Nadal jesteś zainteresowany? Skontaktuj się z nami, aby uzyskać więcej informacji!",
             "contactUs": "Skontaktuj się z nami"

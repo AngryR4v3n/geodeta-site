@@ -41,7 +41,7 @@
                     <h1><%=text.mainTitle%></h1>
                     <h6><%=text.mainDesc%></h6>
                 </div>
-                <div class="container">
+                <div id="carousel-container" class="container">
                     <div id="carouselExampleIndicators" class="carousel slide row" data-interval="false">
                         <ol class="carousel-indicators">
                             <%photos.forEach(element=> { %>
@@ -56,7 +56,7 @@
                             <%photos.forEach(element=> { %>
                                 <% if(element.id === 0) {%>
                                     <div class="carousel-item col-12 active">
-                                        <img class="d-block w-100" src="<%=element.src%>" alt="First slide">
+                                        <img class="d-block w-100" src="<%=element.src%>">
                                         <div class="carousel-caption d-none d-md-block active">
                                             <h5><%=element.title%></h5>
                                             <p><%=element.desc%></p>
@@ -65,7 +65,7 @@
 
                                 <%} else {%>
                                     <div class="carousel-item col-12">
-                                        <img class="d-block w-100" src="<%=element.src%>" alt="First slide">
+                                        <img class="d-block w-100" src="<%=element.src%>">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5><%=element.title%></h5>
                                             <p><%=element.desc%></p>

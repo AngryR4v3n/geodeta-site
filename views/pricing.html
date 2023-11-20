@@ -25,108 +25,39 @@
         <div class="no-gutters">
             <section>
                 <div class="container">
-                    <h2><%=text.mainTitle%></h2>
-                    <h6><%=text.mainDesc%></h6>
-                </div>
-            </section>
-            <section>
-                <div class="container">
                     <div class="content">
                         <div class="title-subtitle">
-                            <h1><%=text.secondTitle%></h1>
-                            <h6><%=text.secondDesc%></h6>
+                            <h1>
+                                <%=text.secondTitle%>
+                            </h1>
+                            <h6>
+                                <%=text.secondDesc%>
+                            </h6>
                         </div>
                         <div class="services-categories">
                             <div class="row-modified">
-                                <!-- For each of plans... -->
-                                <%pricingPlans.forEach(plan=> {%>
-                                    <div class="col-12 col-sm-12 col-md-3">
-                                        <div class="plan">
-                                            <div class="plan-head">
-                                                <h5>
-                                                    <%=plan.title %>
-                                                </h5>
-                                                <p>
-                                                    <%=plan.description%>
-                                                </p>
-                                            </div>
-                                            <div class="plan-body">
-                                                <div class="plan-price">
-                                                    <div class="plan-price-content">
-                                                        <p>
-                                                            <%=plan.price%>
-                                                                <span>zł</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="plan-content">
-                                                    <ul>
-                                                        <% plan.items.forEach(item=> { %>
-                                                            <li>
-                                                                <img src="<%= item.path %>">
-                                                                <p>
-                                                                    <%= item.description %>
-                                                                </p>
+                                <div class="col-12 col-md-12 col-md-3">
+                                    <div class="plan">
+                                        <div class="plan-head">
+                                            <h6>
+                                                <%=pricingDesc%>
+                                            </h6>
 
-                                                            </li>
-                                                            <% }); %>
-                                                    </ul>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <% }); %>
-                            </div>
-                            <div class="row-modified">
-                                <div class="more-info-plan">
-
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
             </section>
-            <!-- <section>
-                <div class="container">
-                    <h2>More information on our services</h2>
-                    <div class="row-modified">
-                        <table class="styled-table">
-                            <thead>
-                                <tr>
-                                    <th>Service</th>
-                                    <th>Description</th>
-                                    <th>More info</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <%//services.forEach(service=> {%>
-                                    <tr>
-                                        <td>
-                                            <%=// service.name %>
-                                        </td>
-                                        <td>
-                                            <%=// service.description %>
-                                        </td>
-                                        <td><a href="<%=// service.link %> ">See more information</a></td>
-                                    </tr>
-                                    <%// }); %>
-                            </tbody>
-                        </table>
-
-                    </div>
-                    <br>
-                </div>
-            </section> -->
             <section>
                 <div class="row-modified spaced">
-                    <h3>Check out our project gallery through the years</h3>
+                    <h3><%=text.lastTitle%></h3>
                 </div>
                 <div class="row-modified spaced">
-                    <a href="/gallery" class="button button--solid-dark-blue">Our gallery</a>
+                    <a href="/contactus" class="button button--solid-dark-blue"><%=text.contactButton%></a>
                 </div>
                 <br>
             </section>
-            
+
             <%- include('partials/footer.html', {text: footer}) -%>
 
         </div>

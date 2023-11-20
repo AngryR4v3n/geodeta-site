@@ -17,17 +17,15 @@
 
 .plan-head {
     padding: 25px 40px;
-    background-color: #151E46;
-    color: #B8BBC8;
+    background-color: #fdfdfd;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
 
-.plan-head h5 {
+.plan-head h6 {
     margin: 0 0 13px;
-    color: #fff;
     font-weight: 600;
-    font-size: 20px;
+    color: black;
 
 }
 

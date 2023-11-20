@@ -43,9 +43,9 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('/projects', (req, res) => {
-  res.render('projects.html', {
-    title: siteInfo.webTitles[req.lang].projects,
+app.get('/services', (req, res) => {
+  res.render('services.html', {
+    title: siteInfo.webTitles[req.lang].services,
     header: siteInfo.header[req.lang],
     navBarOptions: siteInfo.siteMap[req.lang],
     footer: siteInfo.footer[req.lang],
@@ -57,7 +57,7 @@ app.get('/pricing', (req, res) => {
   res.render('pricing.html', {
     title: siteInfo.webTitles[req.lang].pricing,
     navBarOptions: siteInfo.siteMap[req.lang],
-    pricingPlans: siteInfo.pricing[req.lang].pricingColumns,
+    pricingDesc: siteInfo.pricing[req.lang].pricingDesc,
     services: siteInfo.services[req.lang], // check the siteInfo.js 
     header: siteInfo.header[req.lang],
     footer: siteInfo.footer[req.lang],

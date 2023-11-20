@@ -107,7 +107,7 @@ nav ol {
 /*Link dropdown*/
 .nav>ul>li>ul {
     position: absolute;
-    top: 100%;
+    top: 25%;
     left: -77px;
     margin-top: 40px;
     background: #F7F8F9;
