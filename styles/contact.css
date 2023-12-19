@@ -84,3 +84,28 @@
     padding-bottom: 20px;
 
 }
+
+@media (max-width: 767px) {
+    .vertical-separator {
+        flex-direction: column;
+    }
+
+    .left {
+        min-width: 0px;
+        width: 100%;
+    }
+
+    .contact-options{
+        flex-direction: column;
+        position: inherit;
+        
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .right{
+        display: none;
+    }
+}

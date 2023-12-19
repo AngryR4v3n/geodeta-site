@@ -118,3 +118,13 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 767px) {
+    .row-modified h3 {
+        text-align: center !important;
+    }
+    .row-modified {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

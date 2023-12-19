@@ -97,10 +97,40 @@
     opacity: 0.11;
 }
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
     display: flex !important;
-  }
+}
 
-  .landing-carousel-quotation-box {
+.landing-carousel-quotation-box {
     flex-basis: 20%;
-  }
+}
+
+@media (max-width: 767px) {
+    .landing-carousel-photo {
+        max-width: 128px;
+        max-height: 128px;
+        margin: 1.5em 1.5em 1.5em 1.5em
+    }
+
+    .landing-carousel-slide {
+        flex-direction: column !important ;
+    }
+
+    .landing-carousel-attribution-row {
+        padding: 0 !important;
+    }
+
+    .landing-carousel-quote h6 {
+        padding: 0 !important;
+    }
+
+    .landing-carousel-quote h6 {
+        font-size: 18px !important;
+    }
+
+    .landing-carousel-quote {
+        max-height: 80%;
+    }
+}

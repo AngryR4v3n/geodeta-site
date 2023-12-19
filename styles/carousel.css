@@ -6,3 +6,11 @@
     padding: 2em 2em 1em 2em;
     overflow: hidden;
   }
+
+  @media (max-width: 767px) {
+    
+
+    .landing-carousel-inner {
+      height: 600px;
+    }
+}

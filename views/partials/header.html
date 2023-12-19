@@ -6,12 +6,22 @@
                     <img src="/public/logo.png" class="logo">
                 </a>
             </div>
+            <a href="#" id="mobileHamburger">
+                <div class="btn-menu d-block d-md-none 3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
             <div class="header__content">
                 <nav class="nav">
                     <ul>
                         <%navBarOptions.forEach(element=> { %>
                             <%if (element.hasDropdown==true) { %>
                                 <li class="navLink hasDropdown">
+                                    <a href="<%=element.link%>">
+                                        <%=element.title%>
+                                    </a>
                                     <ul>
                                         <%element.sublink.forEach(subElement=> { %>
                                             <li>
@@ -27,9 +37,6 @@
                                             </li>
                                             <%});%>
                                     </ul>
-                                    <a href="<%=element.link%>">
-                                        <%=element.title%>
-                                    </a>
                                 </li>
                                 <% } else { %>
                                     <li class="navLink">
@@ -39,7 +46,9 @@
                                     </li>
                                     <%}%>
                                         <%});%>
-                                            <li><a class="custom-button" href="/contact"><%=text.ContactUs%></a></li>
+                                            <li><a class="custom-button" href="/contact">
+                                                    <%=text.ContactUs%>
+                                                </a></li>
                     </ul>
                 </nav>
             </div>

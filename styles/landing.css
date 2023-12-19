@@ -157,3 +157,15 @@
     line-height: 1.65;
 }
 
+@media (max-width: 767px) {
+    #svg-container {
+       margin-top: 100px;
+       margin-bottom: 75px;
+    }
+    .button-video {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}

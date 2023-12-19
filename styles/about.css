@@ -47,3 +47,21 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 767px) {
+    .vertical-separator {
+        flex-direction: column;
+    }
+
+    .left{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .right{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        min-width: 200px !important;
+    }
+}

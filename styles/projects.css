@@ -87,16 +87,17 @@
     box-shadow: 0 15px 32px 0 rgba(166, 175, 194, 0.22);
 }
 
-.tl-content h2{
+.tl-content h2 {
     text-align: left;
 }
-.tl-content p{
+
+.tl-content p {
     text-align: justify;
 }
 
 
 .title {
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-bottom: 80px;
     text-align: center;
@@ -115,7 +116,7 @@ section img {
     margin-bottom: 30px;
 }
 
-#down-gif{
+#down-gif {
     opacity: 0.4;
 }
 
@@ -127,23 +128,24 @@ section img {
     padding: 0;
 
 }
+
 .metric {
     max-width: 20%;
     flex: 0 0 20%;
     padding: 0 15px;
 }
 
-.metric .metric__inner{
+.metric .metric__inner {
     display: flex;
     align-content: center;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
     background: #fdfdfd;
     border-radius: 4px;
     text-align: center;
-    box-shadow: -1px 13px 49px 1px rgba(0,0,0,0.39);
+    box-shadow: -1px 13px 49px 1px rgba(0, 0, 0, 0.39);
     height: 180px;
     opacity: 0.95;
 }
@@ -182,5 +184,17 @@ section img {
 
     .tl-right {
         left: 0%;
+    }
+}
+
+@media (max-width: 767px) {
+    .metrics {
+        flex-direction: column;
+        gap: 70px
+    }
+
+    .metric {
+        width: 200px;
+        max-width: 100%;
     }
 }
