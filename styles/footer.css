@@ -85,3 +85,15 @@
 .footer__nav ul {
     padding: 0;
 }
+
+@media (max-width: 767px) {
+    #footer-content {
+        max-width: 100% !important;
+        flex: auto;
+    }
+
+    .footer .footer__content {
+        padding-left: 0 !important;
+      }
+
+}

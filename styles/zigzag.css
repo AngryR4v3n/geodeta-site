@@ -108,7 +108,7 @@
 }
 
 @media (max-width: 767px) {
-    #contained-zigzag{
+    #contained-zigzag {
         flex-direction: column;
     }
 
@@ -127,7 +127,11 @@
     #zag h2 {
         color: black !important;
     }
-    .section-service .section__content
+
+    .section-service .section__content .section-service .section__content {
+        padding-left: 0px !important;
+    }
+
     .section-service .section__content {
         padding-left: 0px !important;
     }
