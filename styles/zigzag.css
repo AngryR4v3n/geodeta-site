@@ -106,3 +106,29 @@
 .list-services p span {
     color: #FED700;
 }
+
+@media (max-width: 767px) {
+    #contained-zigzag{
+        flex-direction: column;
+    }
+
+    #zig::before {
+        left: 0% !important;
+    }
+
+    #zag::before {
+        right: 100% !important;
+    }
+
+    #zag li {
+        color: black !important;
+    }
+
+    #zag h2 {
+        color: black !important;
+    }
+    .section-service .section__content
+    .section-service .section__content {
+        padding-left: 0px !important;
+    }
+}
