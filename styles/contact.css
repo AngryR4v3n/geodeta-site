@@ -15,6 +15,7 @@
 .right {
     width: 67%;
     max-height: 500px;
+    overflow: hidden;
 }
 
 #header {
