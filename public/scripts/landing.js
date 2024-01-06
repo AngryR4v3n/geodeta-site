@@ -8,9 +8,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
         document.getElementById("backdrop").style.display = "block"
         modal.style.display = "block"
         modal.classList.add("show")
-        var iframe = document.getElementById('landingVideo');
-        //iframe.src += "&autoplay=1"
-        //console.log(iframe.src)
+
     }
     function closeModal() {
         document.getElementById("backdrop").style.display = "none"

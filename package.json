@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "serve-favicon": "^2.5.0"
   },
   "name": "geodeta-site",
   "description": "Landing &amp; contact me website for Anna Dakowicz",

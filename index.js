@@ -3,7 +3,9 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const path = require('path');
 const siteInfo = require("./siteInfo/siteInfo.js")
+const favicon = require('serve-favicon');
 
+app.use(favicon(__dirname + "/public/favicon.ico"));
 app.engine('.html', require('ejs').__express);
 app.set('views', path.join(__dirname, 'views'));
 app.use("/public", express.static(path.join(__dirname, "public")));

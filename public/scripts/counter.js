@@ -2,7 +2,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll(".counter");
 
     counters.forEach((counter) => {
-        console.log(counter)
         prevText = counter.innerText;
         counter.innerText = "0"
         const updateCounter = () => {

@@ -138,16 +138,20 @@ module.exports = {
             "AboutUs": "About us",
             "Services": "Services",
             "Gallery": "Gallery",
-            "titleLabel1": "Ania, your land surveyor",
-            "titleLabel2": "Site map"
+            "titleLabel1": "Ania, land surveyor",
+            "titleLabel2": "Site map",
+            "emailText": "dakowiczanna@interia.pl",
+            "phoneText": "+48 515868159",
         },
         "pl": {
             "Main": "Strona Główna",
             "AboutUs": "O nas",
             "Services": "Usługi",
             "Gallery": "Obrazy",
-            "titleLabel1": "Ania, twoja geodetka",
-            "titleLabel2": "Mapa Strony"
+            "titleLabel1": "Ania,geodeta",
+            "titleLabel2": "Mapa Strony",
+            "emailText": "dakowiczanna@interia.pl",
+            "phoneText": "+48 515868159",
         }
     },
     projects: {
@@ -164,9 +168,9 @@ module.exports = {
             "secondTitle": "Programs we are working with",
             "viewMoreText": "Learn more",
             "cardTitle1": "Division of land and property",
-            "cardText1": "Surveying subdivision of a parcel and property is the physical separation of two or more parcels from the original cadastral parcel, contained within the boundaries of the parcel before the subdivision. The result of this subdivision is a new configuration of parcels with a new layout of boundary lines and areas. The documentation created during the division is in the form of a technical report. Detailed recommendations on the cadastral subdivision of the parcel are included in the local land use plan. The cost of subdivision of a parcel depends on its size.",
+            "cardText1": "The geodetic division of a plot of land and real estate is the physical separation of two or more plots of land from the original registered plot, containing the boundaries of the plot before the division.",
             "cardTitle2": "Set out of buildings",
-            "cardText2": "The surveying set out of buildings is used to place these new objects in space accordingly to the construction project. It is important to maintain appropriate distances between the newly designated objects and the already existing objects within relation to the boundary lines of the property. The surveying set out of buildings is one of the preparatory works that can only be done in the area covered by the building permit or notification.",
+            "cardText2": "Geodetic delineation of buildings in the field serves the spatial location of these objects in accordance with the construction project.",
             "cardTitle3": "Delineation of property boundaries",
             "cardText3": "Boundary marks indicate the location of the boundary line, while boundary points, mark where the property ends.",
             "cardTitle4": "Land surveying for construction projects",
@@ -207,17 +211,17 @@ module.exports = {
     services: {
         "en": {
             "moreInfo": {
-                "1": { "title": "Podział działki i nieruchomości", "desc": "Geodezyjny podział działki i nieruchomości to fizyczne wyodrębnienie z pierwotnej działki ewidencyjnej dwóch lub większej ilości działek, zawierających się w granicach działki sprzed podziału. Efektem tego podziału jest nowa konfiguracja działek o nowym układzie linii granicznych i powierzchniach. Dokumentacja powstająca w trakcie wykonywania podziału ma formę operatu technicznego.\nDokładne zalecenia na temat ewidencyjnego rozbicia działki są ujęte w miejscowym planie zagospodarowania przestrzennego obowiązującego na terenie danej gminy. \nKoszt podziału działki jest uzależniony od jej wielkości. ",},
-                "2": { "title": "Tyczenie budynków", "desc": "Geodezyjne wytyczenie budynków w terenie służy przestrzennemu umiejscowieniu tych obiektów zgodnie z projektem budowlanym. Ważne jest zachowanie odpowiednich odległości wyznaczanych obiektów w stosunku do obiektów istniejących i wznoszonych oraz względem granic nieruchomości.\nGeodezyjne wytyczanie obiektów budowlanych należy do prac przygotowawczych, do których można przystąpić wyłącznie na terenie objętym pozwoleniem na budowę lub zgłoszeniem. ",},
+                "1": { "title": "Division of land and property", "desc": "Surveying subdivision of a parcel and property is the physical separation of two or more parcels from the original cadastral parcel, contained within the boundaries of the parcel before the subdivision. The result of this subdivision is a new configuration of parcels with a new layout of boundary lines and areas. The documentation created during the division is in the form of a technical report. Detailed recommendations on the cadastral subdivision of the parcel are included in the local land use plan. The cost of subdivision of a parcel depends on its size.",},
+                "2": { "title": "Set out of buildings", "desc": "The surveying set out of buildings is used to place these new objects in space accordingly to the construction project. It is important to maintain appropriate distances between the newly designated objects and the already existing objects within relation to the boundary lines of the property. The surveying set out of buildings is one of the preparatory works that can only be done in the area covered by the building permit or notification.",},
                 "3": {
-                    "title": "Wytyczenie i ustalenie granic nieruchomości",
-                    "desc": "Procedurę podziału działki oraz wyznaczenie granic nieruchomości gruntowej przeprowadza uprawniony geodeta. Jego zadaniem jest umieszczenie na gruncie stałych znaków granicznych, a w przypadku ich usunięcia, wznowienie danego punktu. \nGranica działki określana jest przez znaki i punkty graniczne. Znaki graniczne wskazują położenie linii granicznej, zaś punkty graniczne, oznaczają miejsca, gdzie posesja się kończy. \nW sytuacji, gdy granice działki są prawnie zatwierdzone, lecz punkty graniczne je wyznaczające zostały zniszczone, ponawia się proces wytyczenia granic. Jest to procedura szybsza i mniej skomplikowana, niż pierwotne wytyczenie, ponieważ geodeta opiera się na już istniejących dokumentach ewidencyjnych. \nGranice działki warto sprawdzić m.in.:",
+                    "title": "Set out and determination of property lines",
+                    "desc": "The procedure of subdivision of the parcel and determination of the property lines is carried out by an authorized surveyor. Its task is to place permanent landmark on the ground, and if they are removed, to resume a boundary point. The boundary line of a parcel is defined by landmarks and boundary points. Landmarks indicate the location of the boundary line, while boundary points indicate where the property ends. In a situation where the boundary lines of a parcel are legally approved, but the boundary points delineating them have been destroyed, the process of setting out is repeated. This procedure is faster and less complicated than the original set out, because the surveyor relies on already existing cadastral documentation. It is worth checking the boundaries of the parcel:",
                     "list": [
-                        "przed zakupem działki w celu ustalenia jej powierzchni",
-                        "po zakupie działki w przypadku zniszczenia znaków granicznych",
-                        "przed wykonaniem ogrodzenia posesji",
-                        "po otrzymaniu spadku",
-                        "w przypadku podejrzenia zajęcia części posesji przez sąsiada."
+                        "before buying a parcel to determine its area",
+                        "after the purchase of the parcel in case of destruction of landmarks",
+                        "before fencing the property",
+                        "after receiving an inheritance",
+                        "if you suspect that part of the parcel has been occupied by neighbour."
                     ]
                 },
                 "4": {
@@ -232,18 +236,21 @@ module.exports = {
                         "testing of displacements and deformations"
                     ]
                 },
-                "5": {},
+                "5": {
+                    "title": "Surveying works in railway areas",
+                    "desc": "Surveying work in railway areas involves precise measurements and assessments of tracks as well as infrastructure to maintain safety and operational efficiency, ensuring the integrity of the rail network."
+                },
                 "6": {
-                    "title": "Mapy do celów projektowych",
-                    "desc": "Mapa do celów projektowych to projekt zagospodarowania działki lub terenu sporządzany na kopii aktualnej mapy zasadniczej. Jest to rodzaj dokumentacji geodezyjno-kartograficznej, bez której niemożliwe jest uzyskanie pozwolenia na budowę. \n Mapa do celów projektowych zawiera elementy stanowiące treść mapy zasadniczej łącznie z granicami własności nieruchomości, a także:\n",
+                    "title": "Maps for project purposes",
+                    "desc": "A map for project purposes is a plan for the development of a parcel or an area based on a copy of the current base map.  It is a type of surveying and cartographic documentation, without which it is impossible to obtain a building permit. A map for project purposes contains elements constituting the content of the base map, including the property ownership boundary lines, as well as:",
                     "list": [
-                        "linie rozgraniczające tereny o różnym przeznaczeniu",
-                        "linie zabudowy",
-                        "osie ulic i dróg",
-                        "usytuowanie zieleni wysokiej",
-                        "usytuowanie innych obiektów i szczegółów wskazanych przez projektanta.",
+                        "boundary lines for areas of different purposes",
+                        "building lines",
+                        "axes of streets and roads",
+                        "location of timberland",
+                        "location of other objects and details indicated by the designer.",
                     ],
-                    "finalDesc": "Skalę map do celów projektowych dostosowuje się do rodzaju i wielkości obiektu. Najczęściej jest to skala 1:500. \nCzas potrzebny na wykonanie tego typu mapy zależy od wielkości terenu i rodzaju inwestycji."
+                    "finalDesc": "The scale of the maps for project purposes is adjusted to the type and size of the object. The most common is the 1:500 scale. The time needed to prepare this type of map depends on the size of the area and the type of investment."
                 }
             }
         },
@@ -275,7 +282,10 @@ module.exports = {
                         "badanie przemieszczeń i odkształceń"
                     ]
                 },
-                "5": {},
+                "5": {
+                    "title": "Prace geodezyjne na terenach kolejowych",
+                    "desc": "Prace geodezyjne na obszarach kolejowych obejmują precyzyjne pomiary i oceny torów, a także infrastruktury w celu utrzymania bezpieczeństwa i wydajności operacyjnej, zapewniając integralność sieci kolejowej."
+                },
                 "6": {
                     "title": "Mapy do celów projektowych",
                     "desc": "Mapa do celów projektowych to projekt zagospodarowania działki lub terenu sporządzany na kopii aktualnej mapy zasadniczej. Jest to rodzaj dokumentacji geodezyjno-kartograficznej, bez której niemożliwe jest uzyskanie pozwolenia na budowę. \n Mapa do celów projektowych zawiera elementy stanowiące treść mapy zasadniczej łącznie z granicami własności nieruchomości, a także:\n",
