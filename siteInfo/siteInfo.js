@@ -110,7 +110,7 @@ module.exports = {
                 "listItemRight1": " Zapewniamy indywidualne podejście do każdego realizowanego projektu, co zapewnia zadowolenie naszych klientów.",
                 "listItemRight2Keyword": "Lata doświadczenia.",
                 "listItemRight2": " Doświadczenie stanowi fundament naszej firmy. Wieloletnia działalność w branży oraz liczne szkolenia zawodowe sprawiają, że każdy projekt jest możliwy do zrealizowania.",
-                "listItemRight3Keyword": "Skoncentrowany na czasie.",
+                "listItemRight3Keyword": "Szybki czas realizacji.",
                 "listItemRight3": " Naszym priorytetem jest produktywność i szybkie dostarczenie wydajnych rozwiązań dostosowanych do wymagań projektu.",
                 "titleLeft": "Rodzaje projektów, przy których pracowaliśmy",
                 "listItemLeft1Keyword": "Koleje.",
@@ -193,9 +193,9 @@ module.exports = {
             "desc": "Dzięki bogatemu doświadczeniu jako wykonawca specjalizujący się w geodezji, staliśmy się wykwalifikowanymi profesjonalistami w zakresie dokładnych pomiarów i mapowania gruntów dla różnych projektów budowlanych i deweloperskich. Nasze doświadczenie w wykorzystywaniu zaawansowanych technologii i tradycyjnych metod geodezyjnych sprawiło, że jesteśmy zaufanym i niezawodnym źródłem zapewniającym precyzyjne granice i dane topograficzne, a także dostarczającym niezbędną dokumentację prawną.",
             "viewMoreText": "Czytaj więcej",
             "cardTitle1": "Podział działki i nieruchomości",
-            "cardText1": "Geodezyjny podział działki i nieruchomości to fizyczne wyodrębnienie z pierwotnej działki ewidencyjnej dwóch lub większej ilości działek, zawierających się w granicach działki sprzed podziału. Efektem tego podziału jest nowa konfiguracja działek o nowym układzie linii granicznych i powierzchniach. Dokumentacja powstająca w trakcie wykonywania podziału ma formę operatu technicznego. Dokładne zalecenia na temat ewidencyjnego rozbicia działki są ujęte w miejscowym planie zagospodarowania przestrzennego obowiązującego na terenie danej gminy. Koszt podziału działki jest uzależniony od jej wielkości.",
+            "cardText1": "Geodezyjny podział działki i nieruchomości to fizyczne wyodrębnienie z pierwotnej działki ewidencyjnej dwóch lub większej ilości działek, zawierających się w granicach działki sprzed podziału.",
             "cardTitle2": "Tyczenie budynków",
-            "cardText2": "Geodezyjne wytyczenie budynków w terenie służy przestrzennemu umiejscowieniu tych obiektów zgodnie z projektem budowlanym. Ważne jest zachowanie odpowiednich odległości wyznaczanych obiektów w stosunku do obiektów istniejących i wznoszonych oraz względem granic nieruchomości. Geodezyjne wytyczanie obiektów budowlanych należy do prac przygotowawczych, do których można przystąpić wyłącznie na terenie objętym pozwoleniem na budowę lub zgłoszeniem.",
+            "cardText2": "Geodezyjne wytyczenie budynków w terenie służy przestrzennemu umiejscowieniu tych obiektów zgodnie z projektem budowlanym.",
             "cardTitle3": "Wytyczenie i ustalenie granic nieruchomości",
             "cardText3": "Granica działki określana jest przez znaki i punkty graniczne. Znaki graniczne wskazują położenie linii granicznej, zaś punkty graniczne, oznaczają miejsca, gdzie posesja się kończy.",
             "cardTitle4": "Obsługa geodezyjna inwestycji budowlanych",
@@ -317,7 +317,7 @@ module.exports = {
 
         "pl": {
             "secondTitle": "Mapowanie przyszłości w uczciwej cenie",
-            "secondDesc": "Dowiedz się, jakie usługi oferujemy dla wszystkich Twoich potrzeb geodezyjnych.",
+            "secondDesc": "Dowiedz się, jakie usługi oferujemy.",
             "pricingDesc": "Koszt realizacji każdego projektu jest wyceniany w sposób indywidualny. Jest on uzależniony od kompleksowości, czasu oraz zasobów niezbędnych do realizacji projektu. Po więcej informacji na temat kosztów współpracy zapraszamy do kontaktu telefonicznego lub drogą mailową.",
             "lastTitle": "Sprawdź nasze dane kontaktowe",
             "contactButton": "Kontakt z nami"
@@ -328,7 +328,7 @@ module.exports = {
     gallery: {
         "en": {
             "mainTitle": "Project gallery",
-            "mainDesc": "Explore our diverse gallery of projects showcasing creativity and expertise in land surveying.",
+            "mainDesc": "",
             "previousButton": "Previous",
             "nextButton": "Next",
             "photos": [
@@ -346,7 +346,7 @@ module.exports = {
         },
         "pl": {
             "mainTitle": "Galeria projektów",
-            "mainDesc": "Zapoznaj się z naszą różnorodną galerią projektów prezentujących kreatywność i wiedzę specjalistyczną w zakresie geodezji.",
+            "mainDesc": "",
             "previousButton": "Poprzedni",
             "nextButton": "Następny",
             "photos": [
