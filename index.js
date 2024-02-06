@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.NODE_PORT || 3000
 const path = require('path');
 const siteInfo = require("./siteInfo/siteInfo.js")
 const favicon = require('serve-favicon');
