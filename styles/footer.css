@@ -8,19 +8,23 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.footer .footer__content-title {
+.footer .footer__content-logo{
     margin-bottom: 24px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(112, 112, 112);
+}
+
+.footer .footer__content-logo p {
+    text-align: left;
+}
+
+.footer .footer__content-logo img {
+    width: 100%;
 }
 
 .footer .footer__content {
     padding-left: 56px;
 }
 
-.footer .footer__content-title {
-    margin-bottom: 24px;
-    color: rgba(255, 255, 255, 0.6);
-}
 
 .footer .footer__bar {
     font-size: 16px;
